@@ -33,7 +33,7 @@ export default function PinPrompt({ dest, target, biaya, closePrompt }) {
         if (currMoney < biaya) {
             setIsBalanceEnough(false);
         }
-    }, [currMoney, biaya]);
+    }, [biaya, currMoney]);
 
     useEffect(() => {
         AOS.init();
@@ -61,7 +61,7 @@ export default function PinPrompt({ dest, target, biaya, closePrompt }) {
                             <Link to={target}>
                                 <div className="pin-prompt-agree-btn-container">
                                     {/* kalo hujan: */}
-                                    <button className="agree-btn btn btn-success" onClick={() => {costHandler(); setShowRainyModal(true)}}>Pergi</button>
+                                    <button className="agree-btn btn btn-success" onClick={() => { costHandler(); setShowRainyModal(true) }}>Pergi</button>
                                     {/* kalo ga hujan: */}
                                     {/* <button className="agree-btn btn btn-success" onClick={() => {costHandler(); setShowRainyModal(false)}}>Pergi</button> */}
                                 </div>

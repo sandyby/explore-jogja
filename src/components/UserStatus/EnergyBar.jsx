@@ -31,7 +31,6 @@ export default function EnergyBar({ maxEgy }) {
             setShowAlert(true);
         }
         else if (currEgy > 0 && isDead) setIsDead(false);
-        // console.log(isDead)
     }, [currEgy, isDead]);
 
     const compEgyBarColor = () => {
