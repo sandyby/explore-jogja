@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/explore-jogja/static/css/main.dfa33eab.css",
-    "main.js": "/explore-jogja/static/js/main.b84b0d1f.js",
+    "main.js": "/explore-jogja/static/js/main.8acc8741.js",
     "static/js/885.22eb1240.chunk.js": "/explore-jogja/static/js/885.22eb1240.chunk.js",
     "static/media/pantai-parangtritis.png": "/explore-jogja/static/media/pantai-parangtritis.7bc3a96cf3ba3dcaace5.png",
     "static/media/malioboro-1.jpg": "/explore-jogja/static/media/malioboro-1.fe4841ad0662d4b1828b.jpg",
@@ -98,11 +98,11 @@
     "index.html": "/explore-jogja/index.html",
     "static/media/slick.woff": "/explore-jogja/static/media/slick.295183786cd8a1389865.woff",
     "main.dfa33eab.css.map": "/explore-jogja/static/css/main.dfa33eab.css.map",
-    "main.b84b0d1f.js.map": "/explore-jogja/static/js/main.b84b0d1f.js.map",
+    "main.8acc8741.js.map": "/explore-jogja/static/js/main.8acc8741.js.map",
     "885.22eb1240.chunk.js.map": "/explore-jogja/static/js/885.22eb1240.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfa33eab.css",
-    "static/js/main.b84b0d1f.js"
+    "static/js/main.8acc8741.js"
   ]
 }
