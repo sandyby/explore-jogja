@@ -1,0 +1,155 @@
+.carousel-kegiatan-pilih-status {
+    /* padding: 5px; */
+    /* margin: 0px;
+    text-align: center;
+    font-size: 1.5em; */
+}
+
+.carousel-kegiatan-pilih-btn {
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    width: 150px;
+}
+
+.carousel-kegiatan-pilih-status {
+    position: absolute;
+    bottom: 5%;
+    transform: translate(26%, 0%);
+}
+
+.carousel-kegiatan-pilih-not-enough-balance,
+.carousel-kegiatan-pilih-enough-balance-and-enough-energy,
+.carousel-kegiatan-pilih-not-enough-energy,
+.carousel-kegiatan-pilih-not-enough-energy-and-not-enough-balance {
+    padding: 0px 0px 10px;
+}
+
+.carousel-kegiatan-pilih-btn-container button {
+    background-color: #ffe083;
+}
+
+.carousel-kegiatan-pilih-btn-container button:hover {
+    background-color: #ffbf00;
+}
+
+.carousel-kegiatan-pilih-not-enough-balance {}
+
+.carousel-kegiatan-pilih-enough-balance-and-enough-energy {}
+
+.carousel-kegiatan-pilih-not-enough-energy {}
+
+.carousel-kegiatan-pilih-not-enough-energy-and-not-enough-balance {}
+
+@media only screen and (min-width: 800px) and (max-width: 1290px) {
+    .carousel-kegiatan-pilih-btn {
+        left: 26%;
+    }
+}
+
+@media only screen and (min-width: 1190px) and (max-width: 1290px) {
+    .carousel-kegiatan-pilih-status {
+        transform: translate(11%, 0%);
+    }
+}
+
+@media only screen and (min-width: 1074px) and (max-width: 1190px) {
+    .carousel-kegiatan-pilih-status {
+        transform: translate(5%, 0%);
+    }
+}
+
+@media only screen and (min-width: 955px) and (max-width: 1074px) {
+    .carousel-kegiatan-pilih-status {
+        bottom: 3%;
+        font-size: 22px;
+        transform: translate(13%, 0%);
+    }
+
+    .carousel-kegiatan-pilih-btn {
+        left: 20%;
+    }
+}
+
+@media only screen and (min-width: 881px) and (max-width: 955px) {
+    .carousel-kegiatan-pilih-status {
+        bottom: 3%;
+        font-size: 22px;
+        transform: translate(5%, 0%);
+    }
+
+    .carousel-kegiatan-pilih-btn {
+        left: 16%;
+    }
+}
+
+@media only screen and (min-width: 690px) and (max-width: 800px) {
+    .carousel-kegiatan-pilih-btn {
+        left: 24%;
+    }
+}
+
+@media only screen and (min-width: 699px) and (max-width: 735px) {
+    .carousel-kegiatan-pilih-status {
+        bottom: 3%;
+        transform: translate(5%, 0%);
+    }
+}
+
+@media only screen and (min-width: 644px) and (max-width: 699px) {
+    .carousel-kegiatan-pilih-status {
+        bottom: 3%;
+        font-size: 22px;
+        transform: translate(10%, 0%);
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 644px) {
+    .carousel-kegiatan-pilih-status {
+        bottom: 3%;
+        font-size: 22px;
+        transform: translate(5%, 0%);
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 690px) {
+    .carousel-kegiatan-pilih-btn {
+        left: 18.5%;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 600px) {
+    .carousel-kegiatan-pilih-btn {
+        left: 31%;
+    }
+
+    .carousel-kegiatan-pilih-status {
+        transform: translate(40%, 0%);
+    }
+}
+
+@media only screen and (min-width: 455px) and (max-width: 550px) {
+    .carousel-kegiatan-pilih-status {
+        transform: translate(40%, 0%);
+    }
+}
+
+@media only screen and (min-width: 422px) and (max-width: 550px) {
+    .carousel-kegiatan-pilih-btn {
+        left: 29%;
+    }
+
+    .carousel-kegiatan-pilih-status {
+        transform: translate(25%, 0%);
+    }
+}
+
+@media only screen and (max-width: 422px) {
+    .carousel-kegiatan-pilih-btn {
+        left: 22%;
+    }
+
+    .carousel-kegiatan-pilih-status {
+        transform: translate(8%, 0%);
+    }
+}

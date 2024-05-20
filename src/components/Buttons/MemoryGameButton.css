@@ -1,0 +1,49 @@
+.game-btn-container{
+    top: 330px;
+    left: 0;
+    padding: 5px 15px 5px 5px;
+    border-radius: 0 35px 35px 0;
+    transition: background-color 0.5s ease;
+    z-index: 10;
+}
+
+.game-btn-container:hover{
+    background-color: white;
+    border-radius: 0 35px 35px 0;
+}
+
+.game{
+    background-color: transparent;
+}
+
+.game-img {
+    width: 50px;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 422px){
+    .game-btn-container{
+        top: 700px;
+        left: 7em;
+        padding: 10px;
+        border-radius: 100px 0 100px 100px;
+    }
+
+    .game-btn-container:hover{
+        background-color: white;
+        border-radius: 100px 0 100px 100px;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .game-btn-container{
+        top: 580px;
+        left: 6em;
+        padding: 10px;
+        border-radius: 100px 0 100px 100px;
+    }
+
+    .game-btn-container:hover{
+        background-color: white;
+        border-radius: 100px 0 100px 100px;
+    }
+}

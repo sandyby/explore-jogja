@@ -1,0 +1,38 @@
+.open-modal-btn-container{
+    top: 400px;
+    left: 0;
+    padding: 5px 20px 5px 5px;
+    border-radius: 0 35px 35px 0;
+    transition: background-color 0.5s ease;
+    z-index: 10;
+}
+
+.open-modal-btn-container:hover{
+    background-color: white;
+    border-radius: 0 40px 40px 0;
+}
+
+.open-modal-btn{
+    background: transparent;
+}
+
+.question-img{
+    width: 50px;
+}
+
+@media only screen and (max-width: 450px){
+    .open-modal-btn-container{
+        top: 365px;
+        left: 75%;
+        padding: 10px;
+        border-radius: 100px;
+    }
+
+    .open-modal-btn-container:hover{
+        border-radius: 100px;
+    }
+
+    .question-img{
+        width: 40px;
+    }
+}

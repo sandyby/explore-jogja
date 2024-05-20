@@ -1,0 +1,129 @@
+:root {
+    --maxCharacters: 50;
+    --bg-color: hsl(39, 77%, 83%);
+    --defTypingSpeed: 2s;
+    --maxWidth: calc(100% - 40px)
+}
+
+@keyframes typing {
+    to {
+        left: 100%;
+    }
+}
+
+.floating-text-container {
+    background: var(--bg-color);
+    max-width: var(--maxWidth);
+    width: 100%;
+    min-height: fit-content;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 10px;
+    display: grid;
+}
+
+.floating-text-content-container {
+    display: inline-block;
+    max-width: var(--maxWidth);
+    padding: 15px;
+    position: relative;
+}
+
+.floating-text-content {
+    width: max-content;
+    margin: 0;
+    font-family: "Reddit Mono", monospace;
+    font-size: 1.5em;
+    position: relative;
+}
+
+.floating-text-content::before,
+.floating-text-content::after {
+    margin: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0px
+}
+
+/* .content-first-sentence::before {
+    background: var(--bg-color);
+    animation:
+        typing var(--defTypingSpeed) 500ms steps(34) forwards;
+}
+
+.content-second-sentence::before {
+    background: var(--bg-color);
+    animation:
+        typing 4s 3s steps(60) forwards;
+} */
+
+.content-1::before {
+    background: var(--bg-color);
+    animation:
+        typing var(--defTypingSpeed) 500ms steps(34) forwards;
+}
+
+.content-2::before {
+    background: var(--bg-color);
+    animation:
+        typing 4s 3s steps(60) forwards;
+}
+
+.content-3::before {
+    background: var(--bg-color);
+    animation:
+        typing var(--defTypingSpeed) 500ms steps(34) forwards;
+}
+
+.content-4::before {
+    background: var(--bg-color);
+    animation:
+        typing 4s 3s steps(61) forwards;
+}
+
+.content-5::before {
+    background: var(--bg-color);
+    animation:
+        typing 4.5s 500ms steps(71) forwards;
+}
+
+.content-6::before {
+    background: var(--bg-color);
+    animation:
+        typing 4.5s 5.5s steps(70) forwards;
+}
+
+.content-7::before {
+    background: var(--bg-color);
+    animation:
+        typing 4.5s 500ms steps(70) forwards;
+}
+
+.content-8::before {
+    background: var(--bg-color);
+    animation:
+        typing 4.5s 5.5s steps(69) forwards;
+}
+
+.content-btn-container {
+    position: absolute;
+    right: 0;
+}
+
+.next-content-btn {
+    width: 100%;
+}
+
+.skip-content-btn {}
+
+@media (max-width: 480px) {
+    body{
+        .floating-text-content{
+            font-size: 9px;
+        }
+    }
+}

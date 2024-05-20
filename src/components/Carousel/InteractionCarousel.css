@@ -1,0 +1,183 @@
+.interaction-carousel-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 988;
+}
+
+.interaction-carousel-modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image:
+    radial-gradient(at 80% 30%, rgb(255, 168, 122) 0px, transparent 50%),
+    radial-gradient(at 0% 10%, rgb(255, 249, 133) 0px, transparent 50%),
+    radial-gradient(at 20% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 20% 80%, rgb(157, 138, 255) 0px, transparent 50%),
+    radial-gradient(at 20% 20%, rgb(255, 249, 133) 0px, transparent 50%);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+  width: 80vw;
+  height: auto;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 988;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  25% {
+    background-position: 50% 50%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  75% {
+    background-position: 50% 50%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.close-interaction-carousel-modal-btn-container {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+
+.close-interaction-carousel-modal-btn-container button {
+  background-color: rgb(255, 203, 92);
+}
+
+.close-interaction-carousel-modal-btn-container button:hover {
+  color: red;
+  background-color: rgb(225, 181, 87);
+}
+
+.close-interaction-carousel-modal-btn-container button {
+  padding: 0 13px;
+  position: absolute;
+  right: -10px;
+  top: -5px;
+}
+
+.close-interaction-carousel-modal-btn-container button:hover {
+  color: red;
+  background-color: #ffd451;
+}
+
+.app-container {
+  width: 75%;
+  margin: auto;
+}
+
+.container-mt {
+  margin-top: 20px;
+}
+
+.interaction-carousel-slider .slick-slide {
+  padding: 0 10px;
+}
+
+
+.interaction-carousel-card {
+  background-color: white;
+  height: 400px;
+  color: black;
+  border-radius: 15px;
+  position: relative;
+}
+
+.interaction-carousel-card-texts-container {
+  text-align: center;
+  padding: 5px;
+}
+
+.interaction-carousel-card-texts {
+  margin: 0px;
+}
+
+.happiness-get {
+  padding: 5px;
+}
+
+.image-container {
+  background-color: #f9b298;
+  height: 224px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.image-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.slick-prev,
+.slick-next {
+  opacity: 0.75;
+  transition: all 0.5s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  opacity: 2;
+  transform: scale(1.5);
+}
+
+@media only screen and (min-width: 881px) and (max-width: 1111px) {
+  .image-container img {
+    width: 200px;
+    height: 170px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 739px) {
+  .image-container img {
+    width: 200px;
+    height: 170px;
+  }
+}
+
+@media only screen and (max-width: 398px) {
+  .image-container img {
+    width: 200px;
+    height: 170px;
+  }
+}

@@ -1,0 +1,258 @@
+.menu-container {
+    width: 200px;
+    height: 115px;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: floating alternate-reverse 3s infinite;
+    text-align: center;
+}
+
+.logo-container {
+    /* position: absolute; */
+    /* width: 100vw; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* top: 10px; */
+    /* left: 10px; */
+    margin: 10px;
+}
+
+.logo-container img {
+    width: 60px;
+}
+
+.start-btn-container,
+.credits-btn-container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: calc(100%/2.5);
+    /* background-color: yellow; */
+}
+
+.menu-btn {
+    /* width: 140px;
+    padding: 15px;
+    border: none; */
+    border-radius: 7px !important;
+    background-color: hsla(216, 56%, 33%);
+    /* color: white; */
+}
+
+.menu-btn:hover {
+    background-color: hsl(216, 56%, 65%);
+    color: hsl(265, 89%, 4%);
+}
+
+.menu-background-container {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -5;
+    top: 0;
+    background-position: center;
+}
+
+.title-container {
+    /* width: 500px; */
+    /* height: 115px; */
+    position: absolute;
+    top: 50%;
+    /* left: 38%; */
+    left: 50%;
+    transform: translate(-35%, -50%);
+    /* margin: -160px 0 0 -250px; */
+    text-align: center;
+    width: 100vw;
+}
+
+.title span {
+    font-size: 2em;
+    width: 100vw;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.start-btn,
+.credits-btn {
+    padding: 0.8em;
+}
+
+.start-btn-container {
+    margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 1251px) and (max-width: 1290px) {
+    .title span{
+        font-size: 1.9em;
+    }
+
+    .title-container{
+        transform: translate(-30%, -50%);
+    }
+}
+
+@media only screen and (min-width: 1099px) and (max-width: 1251px) {
+    .title span{
+        font-size: 1.8em;
+    }
+
+    .title-container{
+        transform: translate(-25%, -50%);
+    }
+}
+
+@media only screen and (min-width: 979px) and (max-width: 1099px) {
+    .title span{
+        font-size: 1.7em;
+    }
+
+    .title-container{
+        top: 55%;
+        transform: translate(-26%, -50%);
+    }
+}
+
+@media only screen and (min-width: 840px) and (max-width: 979px) {
+    .title span {
+        font-size: 1.6em;
+    }
+
+    .title-container {
+        top: 60%;
+        transform: translate(-23%, -50%);
+    }
+
+    .start-btn,
+    .credits-btn {
+        font-size: 0.8em;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 727px) and (max-width: 840px) {
+    .title span {
+        font-size: 1.5em;
+    }
+
+    .title-container {
+        top: 60%;
+        transform: translate(-18.5%, -50%);
+    }
+
+    .start-btn,
+    .credits-btn {
+        font-size: 0.8em;
+        margin: 0;
+        padding: 15px 0 !important;
+    }
+}
+
+@media only screen and (min-width: 626px) and (max-width: 727px) {
+    .title span {
+        font-size: 1.4em;
+    }
+
+    .title-container {
+        top: 63%;
+        transform: translate(-14%, -50%);
+    }
+
+    .start-btn,
+    .credits-btn {
+        font-size: 0.7em;
+        margin: 0;
+        padding: 13px 0;
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 523px) and (max-width: 626px) {
+    .title span {
+        font-size: 1.3em;
+    }
+
+    .title-container {
+        top: 63%;
+        transform: translate(-8%, -50%);
+    }
+
+    .start-btn,
+    .credits-btn {
+        font-size: 0.7em;
+        margin: 0;
+        padding: 13px 0;
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 432px) and (max-width: 523px) {
+    .title span {
+        font-size: 1.2em;
+    }
+
+    .title-container {
+        top: 64%;
+        transform: translate(0%, -50%);
+    }
+
+    .start-btn,
+    .credits-btn {
+        font-size: 0.6em;
+        margin: 0;
+        padding: 13px 0;
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 432px) {
+    .title span {
+        font-size: 1.1em;
+    }
+
+    .title-container {
+        top: 63%;
+        transform: translate(11%, -50%);
+    }
+
+    .start-btn,
+    .credits-btn {
+        font-size: 0.6em;
+        margin: 0;
+        padding: 13px 0;
+        width: 100px;
+    }
+
+    .logo-yogya img{
+        width: 35px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .logo-yogya img{
+        width: 35px;
+    }
+
+    .title span {
+        font-size: 1.3em;
+    }
+
+    .title-container {
+        top: 63%;
+        transform: translate(16.5%, -50%);
+    }
+
+    .start-btn,
+    .credits-btn {
+        font-size: 0.9em;
+        margin: 0;
+        padding: 15px 0;
+        width: 120px;
+    }
+}

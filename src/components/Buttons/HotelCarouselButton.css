@@ -1,0 +1,49 @@
+.hotel-carousel-btn-container{
+    top: 460px;
+    left: 0;
+    padding: 7px 15px 7px 5px;
+    border-radius: 0 35px 35px 0;
+    transition: background-color 0.5s ease;
+    z-index: 10;
+}
+
+.hotel-carousel-btn-container:hover{
+    background-color: white;
+    border-radius: 0 35px 35px 0;
+}
+
+.hotel{
+    background: transparent;
+}
+
+.hotel-img{
+    width: 50px;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 422px){
+    .hotel-carousel-btn-container{
+        top: 700px;
+        left: 21em;
+        padding: 10px;
+        border-radius: 0 100px 100px 100px;
+    }
+
+    .hotel-carousel-btn-container:hover{
+        background-color: white;
+        border-radius: 0 100px 100px 100px;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .hotel-carousel-btn-container{
+        top: 580px;
+        left: 18em;
+        padding: 10px;
+        border-radius: 0 100px 100px 100px;
+    }
+
+    .hotel-carousel-btn-container:hover{
+        background-color: white;
+        border-radius: 0 100px 100px 100px;
+    }
+}

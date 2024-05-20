@@ -1,0 +1,218 @@
+.memory-game-modal-header {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.memory-game-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.memory-game-modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(30deg, beige, navajowhite, rgb(255, 228, 77), orange);
+    background-size: 200% 200%;
+    animation: animation 8s ease infinite;
+    width: 90vw;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+@keyframes animation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.memory-game-modal-content {
+    padding: 15px;
+    list-style: none;
+    text-align: center;
+}
+
+.memory-game-start-btn-container button:hover {
+    color: green;
+}
+
+.temp-close-memory-game-modal-btn-container {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+}
+
+.temp-close-memory-game-modal-btn-container button{
+    padding: 0 13px;
+}
+
+.temp-close-memory-game-modal-btn-container button:hover{
+    color: red;
+}
+
+/* .card-grid {
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+} */
+
+.card-grid {
+    width: 100%;
+    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.card:hover {
+    opacity: 0.75;
+}
+
+img.back-side,
+img.front-side {
+    width: 200px;
+    height: 200px;
+}
+
+.memory-game-content-header-container {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.memory-game-retry-btn-container button{
+    background-color: orange;
+    box-shadow: 0 0 10px 0.5 black;
+}
+
+.memory-game-retry-btn-container button:hover{
+    background-color: goldenrod;
+    color: white;
+}
+
+.memory-game-retry-btn-container,
+.total-turns-container {
+    margin: 5px 0px;
+}
+
+.memory-game-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.finish-memory-game-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: beige;
+    width: fit-content;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.finish-memory-game-header-container {
+}
+
+.finish-memory-game-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    width: fit-content;
+    margin: 0px auto;
+}
+
+@media only screen and (min-width: 1117px) and (max-width: 1290px) {
+    img.back-side,
+    img.front-side {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1117px) {
+    img.back-side,
+    img.front-side {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media only screen and (min-width: 913px) and (max-width: 980px) {
+    img.back-side,
+    img.front-side {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media only screen and (min-width: 756px) and (max-width: 913px) {
+    img.back-side,
+    img.front-side {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 756px) {
+    img.back-side,
+    img.front-side {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media only screen and (min-width: 410px) and (max-width: 550px) {
+    img.back-side,
+    img.front-side {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 410px) {
+    img.back-side,
+    img.front-side {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 375px) {
+    img.back-side,
+    img.front-side {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    img.back-side,
+    img.front-side {
+        width: 60px;
+        height: 60px;
+    }
+}

@@ -1,0 +1,54 @@
+.prambanan {
+    width: 100vw;
+    height: 100dvh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.meaning {
+    position: absolute;
+    background-color: beige;
+    bottom: 90px;
+    width: 90vw;
+    left: 5%;
+}
+
+@media only screen and (max-width: 450px) {
+    .background {
+        background-color: beige;
+        animation: gradient 10s ease infinite;
+        background-size: 150% 150%;
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .prambanan {
+        height: 65dvh;
+        background-size: 145% 65%;
+        background-repeat: no-repeat;
+        background-position: top;
+        z-index: 1;
+        position: relative;
+    }
+
+    .meaning {
+        position: absolute;
+        top: 65%;
+        z-index: 1;
+        background-color: beige;
+        padding: 10px;
+        border-radius: 5px;
+        height: 35vh;
+        align-content: center;
+    }
+
+    span .fs-5 {
+        font-size: 23px;
+    }
+}

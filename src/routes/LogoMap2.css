@@ -1,0 +1,188 @@
+/* .Map {
+    background-image: url(../assets/map.png);
+}
+
+.map {
+    background: wheat;
+    width: 55%;
+    height: 85%;
+    position: absolute;
+    bottom: 10%;
+    right: 23%; */
+    /* box-shadow: 0 0 5px ; */
+    /* border-radius: 5px; */
+    /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); */
+    /* border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 40px 0 rgb(0, 0, 0, 0.5);
+
+}
+
+.map img {
+    width: 40%;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+#map .hai {
+    pointer-events: auto;
+}
+
+.map-container {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.map-container.show {
+    opacity: 1;
+}
+
+.pinlog-1 {
+    top: 13.5em;
+    right: 42.6em;
+}
+
+.pinlog-2 {
+    bottom: 16em;
+    right: 49.6em;
+}
+
+.pinlog-3 {
+    top: 22em;
+    right: 32em;
+}
+
+.pinlog-4 {
+    top: 20.5em;
+    left: 43.9em;
+}
+
+.pinlog-5 {
+    top: 16em;
+    left: 41.5em;
+}
+
+.pinlog-1, .pinlog-2, .pinlog-3, .pinlog-4, .pinlog-5 {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    cursor: pointer;
+}
+
+.pinlog-text {
+    align-content: center;
+}
+
+.tooltip-container-pin-1 {
+    top: 10.1em;
+    right: 40.75em;
+}
+
+.tooltip-container-pin-2 {
+    bottom: 21em;
+    right: 46.3em;
+}
+
+.tooltip-container-pin-3 {
+    top: 18.8em;
+    right: 30.2em;
+}
+
+.tooltip-container-pin-4 {
+    top: 17em;
+    left: 41.4em;
+}
+
+.tooltip-container-pin-5 {
+    top: 12.7em;
+    left: 40em;
+}
+
+.tooltip-container-pin-1, .tooltip-container-pin-2, .tooltip-container-pin-3, .tooltip-container-pin-4, .tooltip-container-pin-5 {
+    position: absolute;
+    cursor: pointer;
+    background-color: white;
+    color: black; */
+    /* white-space: nowrap; */
+    /* padding-left: 7px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0s linear 0.3s;
+    display: flex;
+    box-shadow: 0 0 2px black;
+}
+
+.tooltip-container-pin-1::before, .tooltip-container-pin-2::before, .tooltip-container-pin-3::before, .tooltip-container-pin-4::before, .tooltip-container-pin-5::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: 15px solid;
+    transform: translateX(-50%);
+    border-color: white #0000 #0000 #0000;
+}
+
+.pin-bungkus:hover .tooltip-container-pin-1, .pin-bungkus:hover .tooltip-container-pin-2, .pin-bungkus:hover .tooltip-container-pin-3, .pin-bungkus:hover .tooltip-container-pin-4, .pin-bungkus:hover .tooltip-container-pin-5 {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+.tooltip-image-pin {
+    width: 40px; */
+    /* display: block;
+    margin: 10px auto; */
+/* }
+
+
+@media only screen and (min-width: 500px) and (max-width: 1290px){
+    .pinlog-1 {
+        top: 13.5em;
+        right: 35.3em;
+    }
+    
+    .pinlog-2 {
+        bottom: 16em;
+        right: 41.15em;
+    }
+    
+    .pinlog-3 {
+        top: 22em;
+        right: 26em;
+    }
+    
+    .pinlog-4 {
+        top: 20.5em;
+        left: 36.45em;
+    }
+
+    .tooltip-container-pin-1 {
+        top: 10em;
+        right: 33.4em;
+    }
+    
+    .tooltip-container-pin-2 {
+        bottom: 21em;
+        right: 37.8em;
+    }
+    
+    .tooltip-container-pin-3 {
+        top: 18.8em;
+        right: 24.25em;
+    }
+    
+    .tooltip-container-pin-4 {
+        top: 17em;
+        left: 34em;
+    }
+} */

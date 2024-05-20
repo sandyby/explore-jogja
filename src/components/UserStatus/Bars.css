@@ -1,0 +1,61 @@
+.energy-bar,
+.happiness-bar {
+    width: 60%;
+    height: 27.5px;
+    border: 2px solid gray;
+    border-radius: 9px;
+    overflow: hidden;
+    width: 200px;
+}
+
+.energy-bar {
+    margin-top: 7px;
+}
+
+.energy-bar-bar,
+.happiness-bar-bar {
+    border-radius: 7px;
+}
+
+.energy-num,
+.happiness-num {
+    text-align: center;
+    color: aliceblue;
+}
+
+.bars {
+    position: absolute;
+    z-index: 10;
+    right: 3%;
+}
+
+.balance-num {
+    font-size: 30px;
+    width: 170%;
+    margin-top: 5px;
+    margin-left: 10px;
+    position: relative;
+    left: 30px;
+    background-color: rgb(168, 157, 0);
+    background-attachment: fixed;
+    padding: 0 5px;
+    border-radius: 7px;
+    z-index: 2;
+}
+
+.energy {
+    width: 40px;
+}
+
+.happy {
+    width: 30px;
+    margin: 0px 5px 0px 5px;
+}
+
+.coin {
+    width: 25px;
+    position: absolute;
+    bottom: 6px;
+    left: 7px;
+    z-index: 1;
+}

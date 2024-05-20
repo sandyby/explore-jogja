@@ -1,0 +1,57 @@
+.carousel-user-agree-prompt-modal-header-container {
+    padding: 0px;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.carousel-user-agree-prompt-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1005;
+}
+
+.carousel-user-agree-prompt-modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: beige;
+    /* width: 90vw; */
+    /* height: 90vh; */
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1005;
+}
+
+.carousel-not-enough-balance {
+    padding: 10px;
+    border-radius: 7px;
+    text-align: center;
+    width: fit-content;
+    margin: 0px auto;
+}
+
+.carousel-enough-balance {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+    margin: 0px auto;
+}
+
+.carousel-user-agree-prompt-disagree-btn-container {}
+
+.carousel-user-agree-prompt-agree-btn-container {}
+
+.carousel-user-agree-prompt-agree-btn-container,
+.carousel-user-agree-prompt-disagree-btn-container {
+    font-size: 1em;
+    font-weight: bold;
+    padding: auto;
+}

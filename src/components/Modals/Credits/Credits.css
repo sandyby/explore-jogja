@@ -1,0 +1,194 @@
+.credits-modal-header {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.credits-modal-header h2 {
+    text-shadow: -3px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.credits-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.credits-modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 90vw;
+    height: 90vh;
+    background-image: linear-gradient(135deg, #f0f0f0, #343ab5b0, #0f0f0f);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    overflow-y: auto;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.credits-modal-content {
+    padding: 15px;
+    list-style: none;
+    text-align: center;
+    max-height: 100%;
+}
+
+.close-credits-modal-btn-container button {
+    position: absolute;
+    color: white;
+    right: 15px;
+    top: -15px;
+}
+
+.close-credits-modal-btn {
+    text-shadow: -3px 4px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+}
+
+.close-credits-modal-btn-container button:hover {
+    color: red;
+}
+
+.profil {
+    width: 110px;
+    margin-top: 20px;
+}
+
+.insta {
+    width: 15px;
+}
+
+.credits, .credits-2, .credits-3, .credits-4 {
+    position: relative;
+    height: 300px;
+    width: 40%;
+}
+
+.credits, .credits-2{
+    margin-bottom: 30px;
+}
+
+.credits-foto {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    background: #4070f4;
+    z-index: 0;
+    border-radius: 25px 25px 25px 0;
+}
+
+.credits-foto::before, .credits-foto::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background: #4070f4;
+}
+
+.credits-foto::after {
+    border-radius: 25px 0 0 0;
+    background: white;
+    z-index: 0;
+}
+
+.credits-nama, .credits-nama-2, .credits-nama-3, .credits-nama-4 {
+    /* position: absolute; */
+    z-index: -1;
+    background-color: white;
+    height: auto;
+    margin: 100px 0 0;
+    /* top: 125px;
+    left: 0;
+    right: 0; */
+    padding: 90px 0 10px;
+    border-radius: 0 0 25px 25px;
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1080px){
+    .credits-nama-2{
+        padding: 100px 0 28.5px;
+    }
+
+    .credits-3, .credits-4{
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (min-width: 727px) and (max-width: 950px){
+    .credits-3, .credits-4{
+        margin-top: 2.5%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 727px){
+    .credits-3, .credits-4{
+        margin: 2.5% 0;
+    }
+
+    .credits-nama-4{
+        padding-bottom: 37.8px;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 600px){
+    .profil {
+        width: 70px;
+        margin-top: 40px;
+    }
+
+    .credits-3, .credits-4{
+        margin: 2.5% 0;
+    }
+
+    .credits-nama-4{
+        padding-bottom: 33px;
+    }
+
+    .credits-nama, .credits-nama-2, .credits-nama-3, .credits-nama-4{
+        h4{
+            font-size: 20px;
+        }
+
+        h5{
+            font-size: 17px;
+        }
+
+        a{
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 551px){
+    .credits, .credits-2, .credits-3, .credits-4 {
+        width: 95%;
+    }
+
+    .close-credits-modal-btn {
+        margin-top: 15px;
+    }
+}

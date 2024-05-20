@@ -1,0 +1,82 @@
+.pin-prompt-modal-header-container {
+    padding: 0px;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.pin-prompt-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.pin-prompt-modal-container {
+    position: fixed;
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: beige;
+    /* width: 90vw; */
+    /* height: 90vh; */
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000x;
+}
+
+.pin-prompt-modal-content-container {
+    width: 100%;
+}
+
+.not-enough-balance {
+    padding: 15px;
+    border-radius: 7px;
+    text-align: center;
+    width: fit-content;
+    margin: 0px auto;
+}
+
+.enough-balance {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+    margin: 0px auto;
+}
+
+.pin-prompt-disagree-btn-container {}
+
+.pin-prompt-agree-btn-container {}
+
+.pin-prompt-agree-btn-container,
+.pin-prompt-disagree-btn-container {
+    font-size: 1em;
+    font-weight: bold;
+    padding: auto;
+}
+
+@media only screen and (max-width: 422px){
+    .pin-prompt-modal-header-container {
+        h2{
+            font-size: 20px;
+        }
+
+        h4{
+            font-size: 18px;
+        }
+    }
+
+    .pin-prompt-modal-container {
+        width: 80vw;
+    }
+
+    .pin-prompt-disagree-btn-container button, .pin-prompt-agree-btn-container button{
+        font-size: 13px;
+    }
+}
