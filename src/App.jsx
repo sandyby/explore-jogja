@@ -22,7 +22,7 @@ export default function App() {
           <EnergyProvider egy={100} maxEgy={100}>
             <HappinessProvider hap={100} maxHap={100}>
               <BalanceProvider>
-                <BrowserRouter>
+                <BrowserRouter basename="/explore-jogja">
                   <Routes>
                     <Route path="/" element={<Menu />} />
                     <Route path="/map" element={<Map />} />

@@ -10,7 +10,7 @@ import ibis1 from '../../assets/hotel-assets/ibis-styles-yogyakarta-1.jpg'
 import melia1 from '../../assets/hotel-assets/melia-purosani-yogyakarta-1.jpg'
 import qots1 from '../../assets/hotel-assets/queen-of-the-south-resort-1.jpeg'
 import rumahDesa1 from '../../assets/hotel-assets/rumah-desa-homestay-1.jpg'
-import sheraton1 from '../../assets/hotel-assets/sheraton-mustika-yogyakarta-resort-and-spa-1.jpg'
+import sheraton1 from '../../assets/hotel-assets/sheraton-mustika-1.jpg'
 import patio1 from '../../assets/hotel-assets/the-patio-yogya-1.jpg'
 
 const hotelDataSet = [

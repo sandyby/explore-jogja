@@ -43,7 +43,7 @@ function Credits({ closeCredits }) {
                                     <h4>Jennifer Maria Daniella Kastilong</h4>
                                     <h5>00000106205</h5>
                                     <a className='insta-text text-black text-decoration-none' href="https://www.instagram.com/jenniferk_05/">
-                                        <img className='insta' src={instagram} alt="Instagram" /> Instagram
+                                        <img className='insta' src={instagram} alt="Instagram" /> @jenniferk_05
                                     </a>
                                 </div>
                             </div>
@@ -53,7 +53,7 @@ function Credits({ closeCredits }) {
                                     <h4>Rafi Ghadhanfar Muhammad</h4>
                                     <h5>00000108353</h5>
                                     <a className='insta-text text-black text-decoration-none' href="https://www.instagram.com/27__rgm/">
-                                        <img className='insta' src={instagram} alt="Instagram" /> Instagram
+                                        <img className='insta' src={instagram} alt="Instagram" /> @27__rgm
                                     </a>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@ function Credits({ closeCredits }) {
                                     <h4>Sandy Bonfilio Yuvens</h4>
                                     <h5>00000106442</h5>
                                     <a className='insta-text text-black text-decoration-none' href="https://www.instagram.com/xxsandyb/">
-                                        <img className='insta' src={instagram} alt="Instagram" /> Instagram
+                                        <img className='insta' src={instagram} alt="Instagram" /> @xxsandyb
                                     </a>
                                 </div>
                             </div>
@@ -73,14 +73,10 @@ function Credits({ closeCredits }) {
                                     <h4>Muhamad Tarekh</h4>
                                     <h5>00000108776</h5>
                                     <a className='insta-text text-black text-decoration-none' href="https://www.instagram.com/m.trekh/">
-                                        <img className='insta' src={instagram} alt="Instagram" /> Instagram
+                                        <img className='insta' src={instagram} alt="Instagram" /> @m.trekh
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                        <div className='text-white text-center'>
-                            <h2 style={{ textShadow: '-3px 4px 4px rgba(0, 0, 0, 0.5)' }}>Alasan</h2>
-                            <p>hai apa kabar</p>
                         </div>
                     </div>
                 </div>
