@@ -1,8 +1,5 @@
-import caveTubing1 from '../../assets/goa-pindul-assets/cave-tubing-cropped-1.png'
 import caveTubing2 from '../../assets/goa-pindul-assets/cave-tubing-cropped-2.jpg'
-import goaPindul1 from '../../assets/goa-pindul-assets/goa-pindul-cropped-1.jpg'
 import goaPindul2 from '../../assets/goa-pindul-assets/goa-pindul-cropped-2.jpg'
-import rafting1 from '../../assets/goa-pindul-assets/rafting-cropped-1.jpg'
 import rafting2 from '../../assets/goa-pindul-assets/rafting-cropped-2.png'
 
 const GoaPindulDataSet = [

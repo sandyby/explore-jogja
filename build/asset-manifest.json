@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/explore-jogja/static/css/main.dfa33eab.css",
-    "main.js": "/explore-jogja/static/js/main.21443461.js",
+    "main.js": "/explore-jogja/static/js/main.4ce9ebc8.js",
     "static/js/885.22eb1240.chunk.js": "/explore-jogja/static/js/885.22eb1240.chunk.js",
     "static/media/malioboro-2.jpg": "/explore-jogja/static/media/malioboro-2.52623e6e951d6e8bc2e3.jpg",
     "static/media/pantai-parangtritis.png": "/explore-jogja/static/media/pantai-parangtritis.7bc3a96cf3ba3dcaace5.png",
@@ -17,7 +17,6 @@
     "static/media/pasar-malioboro.jpg": "/explore-jogja/static/media/pasar-malioboro.2f0822f7bb5a218c481d.jpg",
     "static/media/maliboro.png": "/explore-jogja/static/media/maliboro.10984f07f50ebf4d5b07.png",
     "static/media/heha-sky-view.png": "/explore-jogja/static/media/heha-sky-view.50cd1473c39cf3a2496a.png",
-    "static/media/prambanan-uhuy.PNG": "/explore-jogja/static/media/prambanan-uhuy.8b229b093d439c28c139.PNG",
     "static/media/map.png": "/explore-jogja/static/media/map.38d8fb7305038264753c.png",
     "static/media/rafting-cropped-2.png": "/explore-jogja/static/media/rafting-cropped-2.1c0c6cc93583a8851cb1.png",
     "static/media/goa-pindul.png": "/explore-jogja/static/media/goa-pindul.76ee110b9731de36486c.png",
@@ -98,6 +97,7 @@
     "static/media/sunset-view-2.jpg": "/explore-jogja/static/media/sunset-view-2.0b090ea56ed12bb0f55b.jpg",
     "static/media/cyka-raya-hotel-1.jpg": "/explore-jogja/static/media/cyka-raya-hotel-1.1b8d463ca972c213569b.jpg",
     "static/media/malioboro-cropped-1.jpg": "/explore-jogja/static/media/malioboro-cropped-1.2cfd8f540de80d85d198.jpg",
+    "static/media/prambanan-2.jpg": "/explore-jogja/static/media/prambanan-2.d369dfd46fa2edb76fe6.jpg",
     "static/media/homestay-damandiri-prambanan-syariah-1.jpg": "/explore-jogja/static/media/homestay-damandiri-prambanan-syariah-1.0b303ce70f76acd32697.jpg",
     "static/media/heha-aeroplane.jpg": "/explore-jogja/static/media/heha-aeroplane.91dae4b524da21373cb2.jpg",
     "static/media/photo-spot.jpg": "/explore-jogja/static/media/photo-spot.03b5a1d5cd8c1c999efe.jpg",
@@ -118,11 +118,11 @@
     "index.html": "/explore-jogja/index.html",
     "static/media/slick.woff": "/explore-jogja/static/media/slick.295183786cd8a1389865.woff",
     "main.dfa33eab.css.map": "/explore-jogja/static/css/main.dfa33eab.css.map",
-    "main.21443461.js.map": "/explore-jogja/static/js/main.21443461.js.map",
+    "main.4ce9ebc8.js.map": "/explore-jogja/static/js/main.4ce9ebc8.js.map",
     "885.22eb1240.chunk.js.map": "/explore-jogja/static/js/885.22eb1240.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfa33eab.css",
-    "static/js/main.21443461.js"
+    "static/js/main.4ce9ebc8.js"
   ]
 }

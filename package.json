@@ -1,7 +1,7 @@
 {
   "name": "react-app",
   "version": "0.1.0",
-  "homepage": "https://sandyby.github.io/explore-jogja",
+  "homepage": "https://sandyby.github.io/explore-jogja-penggemar-html",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

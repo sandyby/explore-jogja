@@ -1,11 +1,6 @@
 import bakpia from '../../assets/malioboro-assets/bakpia.png'
 import krecek from '../../assets/malioboro-assets/krecek.png'
 import kueApem from '../../assets/malioboro-assets/kue-apem.jpg'
-import malioboro1 from '../../assets/malioboro-assets/malioboro-1.png'
-import malioboro2 from '../../assets/malioboro-assets/malioboro-2.jpg'
-import malioboro3 from '../../assets/malioboro-assets/malioboro-3.jpg'
-import malioboro4 from '../../assets/malioboro-assets/malioboro-4.jpg'
-import andong1 from '../../assets/malioboro-assets/andong-1.jpg'
 import andong2 from '../../assets/malioboro-assets/andong-2.jpg'
 import gudeg from '../../assets/malioboro-assets/gudeg.PNG'
 import munggurMinang from '../../assets/malioboro-assets/munggur-minang.png'
@@ -15,8 +10,6 @@ import pasarMalioboro from '../../assets/malioboro-assets/pasar-malioboro.jpg'
 import sateKlathak from '../../assets/malioboro-assets/sate-klathak.png'
 import tiwul from '../../assets/malioboro-assets/tiwul.jpg'
 import malioboroCropped1 from '../../assets/malioboro-assets/malioboro-cropped-1.jpg'
-import malioboroCropped2 from '../../assets/malioboro-assets/malioboro-cropped-2.jpg'
-import { useEffect } from 'react'
 
 const MalioboroDataSet = [
     {

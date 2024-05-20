@@ -1,12 +1,10 @@
 import { createPortal } from 'react-dom';
 import { useState, useEffect, useRef, useContext } from 'react';
-import { BalanceContext } from '../../contexts/BalanceContext';
 import React from 'react';
 import Slider from "react-slick";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CarouselPilihButton from '../Buttons/CarouselPilihButton';
-import hotelDataSet from './HotelData.jsx';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './HotelCarousel.css';
