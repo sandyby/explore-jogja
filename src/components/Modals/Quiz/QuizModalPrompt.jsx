@@ -30,7 +30,7 @@ export default function QuizModalPrompt({ closePrompt, openQuiz, biaya, energi }
 
     const playHandler = () => {
         setCurrMoney(prevMoney => prevMoney - biaya);
-        setCurrEgy(prevEgy => prevEgy - 30);
+        setCurrEgy(prevEgy => prevEgy - energi);
         setIsIntervalActive(false);
     }
 

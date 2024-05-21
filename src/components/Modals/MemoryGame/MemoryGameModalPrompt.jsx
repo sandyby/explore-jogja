@@ -29,7 +29,7 @@ export default function MemoryGameModalPrompt({ closePrompt, openMemoryGame, bia
 
     const playHandler = () => {
         setCurrMoney(prevMoney => prevMoney - biaya);
-        setCurrEgy(prevEgy => prevEgy - 50);
+        setCurrEgy(prevEgy => prevEgy - energi);
         setIsIntervalActive(false);
     }
 
