@@ -187,10 +187,10 @@ export default function Map() {
                     </div >
                     <div className='map-buttons-container d-flex justify-content-between mt-4 mx-5'>
                         <BackToMainButton />
-                        <MemoryGameButton openMemoryGame={() => setMemoryGame(!isMemoryGame)} biaya={150000} energi={50} />
-                        {isMemoryGame && <MemoryGame closeMemoryGame={() => setMemoryGame(!isMemoryGame)} isMemoryGame={isMemoryGame} biaya={150000} energi={50} />}
-                        <QuizButton openQuiz={() => setQuiz(!isQuiz)} energi={30} />
-                        {isQuiz && <QuizAPI closeQuiz={() => setQuiz(!isQuiz)} energi={30} />}
+                        <MemoryGameButton openMemoryGame={() => setMemoryGame(!isMemoryGame)} biaya={90000} energi={20} />
+                        {isMemoryGame && <MemoryGame closeMemoryGame={() => setMemoryGame(!isMemoryGame)} isMemoryGame={isMemoryGame} biaya={150000} energi={20} />}
+                        <QuizButton openQuiz={() => setQuiz(!isQuiz)} energi={10} />
+                        {isQuiz && <QuizAPI closeQuiz={() => setQuiz(!isQuiz)} energi={10} />}
                         <HotelCarouselButton openCarousel={() => setIsHotelCarousel(!isHotelCarousel)} />
                         {isHotelCarousel && <HotelCarousel closeCarousel={() => setIsHotelCarousel(!isHotelCarousel)} dataSet={hotelDataSet} />}
                     </div>
