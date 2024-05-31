@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/explore-jogja/static/css/main.50651595.css",
-    "main.js": "/explore-jogja/static/js/main.ed6473d0.js",
+    "main.js": "/explore-jogja/static/js/main.24c5636e.js",
     "static/js/885.22eb1240.chunk.js": "/explore-jogja/static/js/885.22eb1240.chunk.js",
     "static/media/pantai-parangtritis.png": "/explore-jogja/static/media/pantai-parangtritis.7bc3a96cf3ba3dcaace5.png",
     "static/media/peta-jogja.png": "/explore-jogja/static/media/peta-jogja.3ee0379f882836491aaf.png",
@@ -33,7 +33,6 @@
     "static/media/sunset.jpg": "/explore-jogja/static/media/sunset.812ecfaabf41a603216e.jpg",
     "static/media/home-page.png": "/explore-jogja/static/media/home-page.5c8db7b20c87ff19b369.png",
     "static/media/paralayang.jpeg": "/explore-jogja/static/media/paralayang.b9ef989c70790a2d3202.jpeg",
-    "static/media/gudeg.PNG": "/explore-jogja/static/media/gudeg.708221af63e476f58c0f.PNG",
     "static/media/gudeg.png": "/explore-jogja/static/media/gudeg.708221af63e476f58c0f.png",
     "static/media/game-coin.png": "/explore-jogja/static/media/game-coin.fe3ec6a7eebb9d9d9cff.png",
     "static/media/krecek.png": "/explore-jogja/static/media/krecek.188e0ef0a894ac587a07.png",
@@ -100,11 +99,11 @@
     "index.html": "/explore-jogja/index.html",
     "static/media/slick.woff": "/explore-jogja/static/media/slick.295183786cd8a1389865.woff",
     "main.50651595.css.map": "/explore-jogja/static/css/main.50651595.css.map",
-    "main.ed6473d0.js.map": "/explore-jogja/static/js/main.ed6473d0.js.map",
+    "main.24c5636e.js.map": "/explore-jogja/static/js/main.24c5636e.js.map",
     "885.22eb1240.chunk.js.map": "/explore-jogja/static/js/885.22eb1240.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.50651595.css",
-    "static/js/main.ed6473d0.js"
+    "static/js/main.24c5636e.js"
   ]
 }
