@@ -20,7 +20,7 @@
     width: 50px;
 }
 
-@media only screen and (min-width: 376px) and (max-width: 422px){
+@media only screen and (min-width: 406px) and (max-width: 422px){
     .game-btn-container{
         top: 700px;
         left: 7em;
@@ -33,6 +33,16 @@
         border-radius: 100px 0 100px 100px;
     }
 }
+
+@media only screen and (min-width: 376px) and (max-width: 406px){
+    .game-btn-container{
+        top: 700px;
+        left: 6em;
+        padding: 10px;
+        border-radius: 0 100px 100px 100px;
+    }
+}
+
 
 @media only screen and (max-width: 376px){
     .game-btn-container{

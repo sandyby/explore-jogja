@@ -1,10 +1,7 @@
-import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import { getWeather } from '../components/WeatherAPI/ApiS/WeatherAPI'
-import { useDrag } from 'react-use-gesture'
+import WeatherAPI, {getWeather} from '../components/WeatherAPI/ApiS/WeatherAPI'
 import yogyamap from '../assets/peta-jogja.png'
 import AOS from 'aos'
-import 'aos/dist/aos.css'
 import candi from '../assets/prambanan.png'
 import pantai from '../assets/pantai-parangtritis.png'
 import goa from '../assets/goa-pindul.png'
@@ -26,11 +23,11 @@ import hotelDataSet from '../components/Carousel/HotelData'
 import PinPrompt from '../components/Modals/Pins/PinPrompt'
 import "../components/QuizAPI/Quiz.css";
 import './Map.css'
+import 'aos/dist/aos.css'
 
 function QuizAPI({ closeQuiz }) {
     const [allQuestions, setAllQuestions] = useState([]);
     const [selectedQuestions, setSelectedQuestions] = useState([]);
-    // const [closeQuiz, setCloseQuiz] = useState(false);
 
     useEffect(() => {
         getQuestions();
@@ -121,21 +118,27 @@ export default function Map() {
     const [isQuiz, setQuiz] = useState(false);
     const [isHotelCarousel, setIsHotelCarousel] = useState(false);
     const [weather, setWeather] = useState({});
+
     useEffect(() => {
-        getWeather().then(result => {
-            setWeather(result);
-        });
+        const fetchWeather = () => {
+            // console.log('Fetching weather data...');
+            getWeather()
+                .then(result => {
+                    // console.log('Weather data fetched:', result);
+                    setWeather(result);
+                })
+                .catch(error => {
+                    console.error("Error fetching the weather data:", error);
+                });
+        };
+
+        fetchWeather();
+
+        const weatherInterval = setInterval(fetchWeather, 10000);
+
+        return () => clearInterval(weatherInterval);
     }, []);
-
-
-    const [yogyaMap, setYogyaMap] = useState({ x: 0, y: 0 });
-    const bindYogyaMap = useDrag((params) => {
-        setYogyaMap({
-            x: params.offset[0],
-            y: params.offset[1],
-        });
-    });
-
+    
     const handlePromptToggle = (index) => {
         const newIsPrompting = [...isPrompting];
         newIsPrompting[index] = !newIsPrompting[index];
@@ -154,15 +157,9 @@ export default function Map() {
                     <HappinessBar maxHap={100} />
                     <Balance />
                 </div>
-                <div className="map-background-container mt-5">
+                <div className="map-background-container">
                     <div className="map-image-container m-auto">
-                        {/* <div {...bindYogyaMap()} style={{
-                            position: 'relative',
-                            top: yogyaMap.y,
-                            left: yogyaMap.x,
-                        }}> */}
                         <img className='map-image img-fluid' src={yogyamap} alt="Daerah Istimewa Yogyakarta" />
-                        {/* </div> */}
                         {weather === "Rainy"}
                         <div className="map-icons-container">
                             {pins.map((pin, index) => (
@@ -172,7 +169,6 @@ export default function Map() {
                                         <PinPrompt
                                             dest={pin.dest}
                                             target={pin.target}
-                                            // biaya={pin.biaya}
                                             biaya={weather === "Rainy" ? pin.biaya * 2 : pin.biaya}
                                             closePrompt={() => handlePromptToggle(index)}
                                         />
@@ -188,7 +184,7 @@ export default function Map() {
                     <div className='map-buttons-container d-flex justify-content-between mt-4 mx-5'>
                         <BackToMainButton />
                         <MemoryGameButton openMemoryGame={() => setMemoryGame(!isMemoryGame)} biaya={90000} energi={20} />
-                        {isMemoryGame && <MemoryGame closeMemoryGame={() => setMemoryGame(!isMemoryGame)} isMemoryGame={isMemoryGame} biaya={150000} energi={20} />}
+                        {isMemoryGame && <MemoryGame closeMemoryGame={() => setMemoryGame(!isMemoryGame)} biaya={150000} energi={20} />}
                         <QuizButton openQuiz={() => setQuiz(!isQuiz)} energi={10} />
                         {isQuiz && <QuizAPI closeQuiz={() => setQuiz(!isQuiz)} energi={10} />}
                         <HotelCarouselButton openCarousel={() => setIsHotelCarousel(!isHotelCarousel)} />

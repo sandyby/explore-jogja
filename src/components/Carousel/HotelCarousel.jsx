@@ -1,5 +1,5 @@
 import { createPortal } from 'react-dom';
-import { useState, useEffect, useRef, useContext } from 'react';
+import { useEffect, useRef } from 'react';
 import React from 'react';
 import Slider from "react-slick";
 import AOS from 'aos';
@@ -88,7 +88,7 @@ const HotelCarousel = ({ closeCarousel, dataSet }) => {
             <div className="hotel-carousel-modal-overlay" data-aos='zoom-out'>
                 <div className="hotel-carousel-modal-container" ref={modalRef}>
                     <div className="close-hotel-carousel-modal-btn-container">
-                        <button className='close-hotel-carousel-modal-btn btn fs-3' onClick={closeCarousel}>&times;</button>
+                        <button className='close-hotel-carousel-modal-btn btn fs-3 border-0' onClick={closeCarousel}>&times;</button>
                     </div>
                     <div className="hotel-carousel-modal-content">
                         <Slider {...settings} className="hotel-carousel-slider">
@@ -100,10 +100,8 @@ const HotelCarousel = ({ closeCarousel, dataSet }) => {
                                     <div className="hotel-carousel-card-texts-container">
                                         <p className="hotel-carousel-card-texts text-xl">{d.hotelName}</p>
                                         <p className="hotel-carousel-card-texts ">⭐{d.hotelRating}</p>
-                                        {/* <p className="hotel-carousel-card-texts happiness-get"><span style={{ fontWeight: "bold" }}>+</span>😁{d.happinessGet}<br /><span style={{ fontWeight: "bold" }}>-</span>⚡{d.energi}</p> */}
                                         <p className="hotel-carousel-card-texts happiness-get"><span style={{ fontWeight: "bold" }}>+</span>⚡{d.energyGet}<br /><span style={{ fontWeight: "bold" }}>+</span>😁{d.happinessGet}</p>
                                         <CarouselPilihButton kegiatan={d.hotelName} biaya={d.hotelPrice} energi={d.energyGet} happiness={d.happinessGet} closeCarousel={closeCarousel} isHotel={true} />
-                                        {/* <button className='button'>Pilih</button> */}
                                     </div>
                                 </div>
                             ))}
@@ -114,7 +112,6 @@ const HotelCarousel = ({ closeCarousel, dataSet }) => {
         </>,
         document.getElementById("portal")
     )
-
 };
 
 export default HotelCarousel;

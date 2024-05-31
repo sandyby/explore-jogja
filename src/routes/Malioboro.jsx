@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { Typewriter } from 'react-simple-typewriter'
 import BackToMapButton from '../components/Buttons/BackToMapButton'
 import malioboro from '../assets/malioboro-assets/malioboro-4.jpg'
@@ -16,9 +15,6 @@ export default function Map() {
 
     return (
         <>
-            {/* <div className="title-container">
-                <h1>Daerah Istimewa Yogyakarta</h1>
-            </div> */}
             <div className='background'>
                 <div className="bars">
                     <EnergyBar maxEgy={100} />

@@ -19,9 +19,6 @@ export default function CarouselPilihButton({ kegiatan, biaya, energi, happiness
         } else {
             setIsEnergyEnough(true);
         }
-        // if (currEgy < energi) {
-        //     setIsEnergyEnough(false);
-        // }
         if (currMoney < biaya) {
             setIsBalanceEnough(false);
         }
@@ -53,7 +50,7 @@ export default function CarouselPilihButton({ kegiatan, biaya, energi, happiness
             {!isHotel &&
                 <>
                     {!isBalanceEnough && isEnergyEnough && <div className="carousel-kegiatan-pilih-not-enough-balance">
-                        <h3 className='carousel-kegiatan-pilih-status'>Uang Tidak Cukup!</h3>
+                        <h3 className='carousel-kegiatan-pilih-status-1'>Uang Tidak Cukup!</h3>
                     </div>}
                     {isBalanceEnough && isEnergyEnough && <div className="carousel-kegiatan-pilih-enough-balance-and-enough-energy">
                         <div className="carousel-kegiatan-pilih-btn-container">
@@ -64,11 +61,11 @@ export default function CarouselPilihButton({ kegiatan, biaya, energi, happiness
                             }
                         </div>
                     </div>}
-                    {!isEnergyEnough && isBalanceEnough && <div className="carousel-kegiatan-pilih-not-enough-energy">
-                        <h3 className='carousel-kegiatan-pilih-status'>Energi Tidak Cukup!</h3>
+                    {!isEnergyEnough && isBalanceEnough && <div className="carousel-kegiatan-pilih-not-enough-energy-and-not-enough-balance">
+                        <h3 className='carousel-kegiatan-pilih-status-3 '>Energi Tidak Cukup!</h3>
                     </div>}
-                    {!isEnergyEnough && !isBalanceEnough && <div className="carousel-kegiatan-pilih-not-enough-energy-and-not-enough-balance">
-                        <h3 className='carousel-kegiatan-pilih-status'>Energi dan Uang Tidak Cukup!</h3>
+                    {!isEnergyEnough && !isBalanceEnough && <div className="carousel-kegiatan-pilih-not-enough-energy-and-not-enough-balance2">
+                        <h3 className='carousel-kegiatan-pilih-status-2'>Energi dan Uang Tidak Cukup!</h3>
                     </div>}
                 </>
             }

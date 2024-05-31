@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from "react";
+import { useState } from "react";
 import QuizModalPrompt from "../Modals/Quiz/QuizModalPrompt";
 import quiz from '../../assets/game-quiz.png';
 import './QuizButton.css';

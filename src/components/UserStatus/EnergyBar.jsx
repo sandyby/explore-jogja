@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { getWeather } from "../WeatherAPI/ApiS/WeatherAPI";
+import WeatherAPI, { getWeather } from "../WeatherAPI/ApiS/WeatherAPI";
 import { EnergyContext } from "../../contexts/EnergyContext";
 import { IntervalContext } from "../../contexts/IntervalContext";
 import { RainyContext } from "../../contexts/RainyContext";
@@ -11,17 +11,48 @@ import "./Bars.css";
 export default function EnergyBar({ maxEgy }) {
     const [weather, setWeather] = useState({});
     const { isRaining, setIsRaining, showRainyModal, setShowRainyModal } = useContext(RainyContext);
-
-    useEffect(() => {
-        getWeather().then(result => {
-            setWeather(result);
-        });
-    }, []);
-
     const [isDead, setIsDead] = useState(false);
     const [showAlert, setShowAlert] = useState(false);
     const { currEgy, setCurrEgy } = useContext(EnergyContext);
     const { isIntervalActive, setIsIntervalActive } = useContext(IntervalContext);
+
+    useEffect(() => {
+        getWeather()
+            .then(result => {
+                setWeather(result);
+            })
+            .catch(error => {
+            });
+    }, []);
+
+    useEffect(() => {
+        if (isIntervalActive) {
+            const decreaseEgy = () => {
+                setCurrEgy(prevEgy => (prevEgy > 0 ? prevEgy - 1 : 0));
+            };
+
+            const intervalTime = (weather.weather && weather.weather[0].main === "Rain" ? 5000 : 10000);
+
+            const fetchWeatherInterval = setInterval(() => {
+                getWeather()
+                    .then(result => {
+                        setWeather(result);
+                    })
+                    .catch(error => {
+                    });
+            }, intervalTime);
+
+            const energyInterval = setInterval(() => {
+                decreaseEgy();
+            }, intervalTime);
+
+            return () => {
+                clearInterval(fetchWeatherInterval);
+                clearInterval(energyInterval);
+            };
+        }
+    }, [isIntervalActive, weather]);
+
 
     const currEgyPercentage = (currEgy / maxEgy) * 100;
 
@@ -44,25 +75,6 @@ export default function EnergyBar({ maxEgy }) {
             return "rgb(168, 36, 0)";
         } else return "rgb(168, 17, 0)";
     };
-
-    // const handleRemoveEnergy = () => {
-    //     var newEgy;
-    //     if (weather.weather && weather.weather[0].main === "Rainy") {
-    //         newEgy = currEgy - 15;
-    //         alert("Rain Takes More Energy!")
-    //     }
-    //     else newEgy = currEgy - 10
-
-    //     setCurrEgy(newEgy >= 0 ? newEgy : 0);
-    //     // console.log(isDead);
-    // };
-
-    // const handleAddEnergy = () => {
-    //     const newEgy = currEgy + 10;
-    //     setCurrEgy(newEgy <= maxEgy ? newEgy : maxEgy);
-    //     if (newEgy > 0) setIsDead(false);
-    //     // console.log(isDead);
-    // };
 
     useEffect(() => {
         if (isIntervalActive) {
@@ -87,13 +99,10 @@ export default function EnergyBar({ maxEgy }) {
                             className="energy-bar-bar"
                             style={{ width: `${currEgyPercentage}%`, background: `${compEgyBarColor()}` }}
                         >
-                            {/* <div className="energy-num">{Math.floor(currEgyPercentage)}%</div> */}
                             <div className="energy-num">&nbsp;</div>
                         </div>
                     </div>
                 </div>
-                {/* <button onClick={handleRemoveEnergy}>Remove 10% Energy</button>
-            <button onClick={handleAddEnergy}>Add 10% Energy</button> */}
                 {showAlert && <EnergyModal showAlert={showAlert} setShowAlert={setShowAlert} setCurrEgy={setCurrEgy} />}
             </div>
             {isRaining && showRainyModal && <RainyModal />}

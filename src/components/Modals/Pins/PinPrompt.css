@@ -1,8 +1,6 @@
 .pin-prompt-modal-header-container {
     padding: 0px;
     text-align: center;
-    /* display: flex; */
-    /* justify-content: center; */
 }
 
 .pin-prompt-modal-overlay {
@@ -22,8 +20,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: beige;
-    /* width: 90vw; */
-    /* height: 90vh; */
     padding: 20px;
     border-radius: 5px;
     z-index: 1000x;
@@ -49,10 +45,6 @@
     width: fit-content;
     margin: 0px auto;
 }
-
-.pin-prompt-disagree-btn-container {}
-
-.pin-prompt-agree-btn-container {}
 
 .pin-prompt-agree-btn-container,
 .pin-prompt-disagree-btn-container {

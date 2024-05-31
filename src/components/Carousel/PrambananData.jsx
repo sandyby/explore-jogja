@@ -24,35 +24,6 @@ const PrambananDataSet = [
         energi: -21,
         happinessGet: 48
     },
-    // {
-    //     name: 'Blablab',
-    //     img: '/assets/ironman.jpg',
-    //     biaya: 40000,
-    //     energi: 17,
-    //     happinessGet: 10
-    // },
-
-    // {
-    //     name: 'bLUBUB',
-    //     img: '/assets/thor.jpg',
-    //     biaya: 45000,
-    //     energi: 18,
-    //     happinessGet: 13
-    // },
-    // {
-    //     name: 'xixixi',
-    //     img: '/assets/wick.jpg',
-    //     biaya: 50000,
-    //     energi: 20,
-    //     happinessGet: 16
-    // },
-    // {
-    //     name: 'Jalan',
-    //     img: '/assets/ironman.jpg',
-    //     biaya: 55000,
-    //     energi: 25,
-    //     happinessGet: 20
-    // }
 ];
 
 export default PrambananDataSet;

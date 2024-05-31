@@ -1,12 +1,11 @@
 .error-page-container {
     background-image: linear-gradient(160deg, black, darkred, red, darkred, black);
     background-size: 200% 200%;
-    animation: end 15s ease infinite;
-    /* color: white; */
+    animation: end 10s ease infinite;
     width: 100vw;
     height: 100dvh;
 
-    h1 {
+    h2 {
         font-family: 'Times New Roman', Times, serif;
         position: absolute;
         text-align: center;
@@ -35,5 +34,84 @@
 
     100% {
         background-position: 0% 0%;
+    }
+}
+
+.back{
+    top: 375px;
+    left: 0;
+    padding: 5px 15px 5px 5px;
+    border-radius: 0 35px 35px 0;
+    transition: background-color 0.5s ease;
+    z-index: 10;
+}
+
+.back:hover{
+    background-color: white;
+    border-radius: 0 35px 35px 0;
+}
+
+.main{
+    background: transparent;
+}
+
+.main-img{
+    width: 50px;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 700px){
+    .back{
+        padding: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 150%);
+        border-radius: 100px;
+    }
+
+    .back:hover{
+        background-color: white;
+        border-radius: 100px;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .error-page-container {
+        h2{
+            font-size: 5em;
+        }
+    }
+
+    .back{
+        padding: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 130%);
+        border-radius: 100px;
+    }
+
+    .back:hover{
+        background-color: white;
+        border-radius: 100px;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .error-page-container {
+        h2{
+            font-size: 3.5em;
+        }
+    }
+
+    .back{
+        padding: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        border-radius: 100px;
+    }
+
+    .back:hover{
+        background-color: white;
+        border-radius: 100px;
     }
 }

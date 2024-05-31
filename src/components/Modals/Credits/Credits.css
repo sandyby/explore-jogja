@@ -27,7 +27,7 @@
     border-radius: 10px;
     z-index: 1000;
     width: 90vw;
-    height: 90vh;
+    height: 90dvh;
     background-image: linear-gradient(135deg, #f0f0f0, #343ab5b0, #0f0f0f);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
@@ -58,6 +58,7 @@
     color: white;
     right: 15px;
     top: -15px;
+    border: none;
 }
 
 .close-credits-modal-btn {
@@ -67,6 +68,7 @@
 
 .close-credits-modal-btn-container button:hover {
     color: red;
+    box-shadow: none;
 }
 
 .profil {
@@ -116,14 +118,10 @@
 }
 
 .credits-nama, .credits-nama-2, .credits-nama-3, .credits-nama-4 {
-    /* position: absolute; */
     z-index: -1;
     background-color: white;
     height: auto;
     margin: 100px 0 0;
-    /* top: 125px;
-    left: 0;
-    right: 0; */
     padding: 90px 0 10px;
     border-radius: 0 0 25px 25px;
 }

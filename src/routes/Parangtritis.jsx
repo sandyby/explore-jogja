@@ -1,5 +1,4 @@
-import { Suspense, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 import BackToMapButton from '../components/Buttons/BackToMapButton'
 import parangtritis from '../assets/pantai-parangtritis-assets/sunset.jpg'

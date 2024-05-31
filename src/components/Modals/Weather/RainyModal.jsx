@@ -16,21 +16,22 @@ export default function RainyModal() {
                     <h3>Energi dan Happiness Berkurang 2x Lebih Cepat!</h3>
                     <div className="rainy-modal-btn-container">
                         {/* kalo hujan: */}
-                        <button className='rainy-modal-btn border-0 rounded-2'
+                        {/* <button className='rainy-modal-btn border-0 rounded-2'
                             onClick={() => {
                                 setShowRainyModal(false);
                             }}
                         >
                             Mengerti
-                        </button>
+                        </button> */}
+                        
                         {/* kalo ga hujan: */}
-                        {/* <button className='rainy-modal-btn border-0 rounded-2'
+                        <button className='rainy-modal-btn border-0 rounded-2'
                             onClick={() => {
                                 setShowRainyModal(true);
                             }}
                         >
                             Mengerti
-                        </button> */}
+                        </button>
                     </div>
                 </div>
             </div>

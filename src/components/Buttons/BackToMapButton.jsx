@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useState } from "react"
 import BackToMapModalPrompt from "../Modals/Buttons/BackToMapModalPrompt"
 import peta from '../../assets/map.png'
 import './BackToMapButton.css'

@@ -2,7 +2,12 @@ import ReactDom from 'react-dom'
 import { useState, useEffect, useContext } from 'react'
 import useSound from 'use-sound'
 import MemoryGameCard from '../../Cards/MemoryGameCard'
-import backCard from '../../../assets/back-card.png'
+import AOS from 'aos';
+import { BalanceContext } from '../../../contexts/BalanceContext'
+import { IntervalContext } from '../../../contexts/IntervalContext'
+import { HappinessContext } from '../../../contexts/HappinessContext'
+import { EnergyContext } from '../../../contexts/EnergyContext'
+import backCard from '../../../assets/memory-game-assets/back-card.png'
 import andong from '../../../assets/memory-game-assets/andong.jpg'
 import bakpia from '../../../assets/memory-game-assets/bakpia.png'
 import brahma from '../../../assets/memory-game-assets/brahma.jpg'
@@ -11,8 +16,7 @@ import candiUtama from '../../../assets/memory-game-assets/candi-utama.jpg'
 import candiWisnu from '../../../assets/memory-game-assets/candi-wisnu.jpg'
 import durga from '../../../assets/memory-game-assets/durga.jpg'
 import ganesha from '../../../assets/memory-game-assets/ganesha.jpg'
-import gudeg1 from '../../../assets/memory-game-assets/gudeg-1.PNG'
-import gudeg2 from '../../../assets/memory-game-assets/gudeg-2.png'
+import gudeg from '../../../assets/memory-game-assets/gudeg.png'
 import kueApem from '../../../assets/memory-game-assets/kue-apem.jpg'
 import malioboro1 from '../../../assets/memory-game-assets/malioboro-1.jpg'
 import nasgorMunggur from '../../../assets/memory-game-assets/nasi-goreng-munggur-minang.png'
@@ -28,13 +32,8 @@ import wisnu from '../../../assets/memory-game-assets/wisnu.jpg'
 import mieAyamKamehame from '../../../assets/memory-game-assets/mie-ayam-kamehame.png'
 import patrem from '../../../assets/memory-game-assets/patrem.jpg'
 import flip2 from '../../../assets/memory-game-assets/audio/flip2.mp3'
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './MemoryGame.css'
-import { BalanceContext } from '../../../contexts/BalanceContext'
-import { IntervalContext } from '../../../contexts/IntervalContext'
-import { HappinessContext } from '../../../contexts/HappinessContext'
-import { EnergyContext } from '../../../contexts/EnergyContext'
 
 const imageMap = {
     andong,
@@ -45,8 +44,7 @@ const imageMap = {
     candiWisnu,
     durga,
     ganesha,
-    gudeg1,
-    gudeg2,
+    gudeg,
     kueApem,
     malioboro1,
     nasgorMunggur,
@@ -63,8 +61,7 @@ const imageMap = {
     patrem
 };
 
-function MemoryGame({ closeMemoryGame, isMemoryGame, biaya }) {
-    let balance = 0;
+function MemoryGame({ closeMemoryGame, biaya, energi }) {
     const [multiplier, setMultiplier] = useState(0);
     const [isStart, setStart] = useState(false);
     const [cards, setCards] = useState([]);
@@ -115,7 +112,7 @@ function MemoryGame({ closeMemoryGame, isMemoryGame, biaya }) {
         }
     }
 
-    console.log(selectedImages);
+    // console.log(selectedImages);
 
     const shuffleCards = () => {
         const shuffledCards = [...selectedImages, ...selectedImages]
@@ -134,8 +131,6 @@ function MemoryGame({ closeMemoryGame, isMemoryGame, biaya }) {
         }
 
         choiceNum1 ? setChoiceNum2(card) : setChoiceNum1(card);
-        // console.log(choiceNum1);
-        // console.log(choiceNum2);
     }
 
     useEffect(() => {
@@ -224,7 +219,7 @@ function MemoryGame({ closeMemoryGame, isMemoryGame, biaya }) {
 
     const playHandler = () => {
         setCurrMoney(prevMoney => prevMoney - biaya);
-        setCurrEgy(prevEgy => prevEgy - 5);
+        setCurrEgy(prevEgy => prevEgy - energi);
         setIsIntervalActive(false);
     }
 
@@ -260,16 +255,12 @@ function MemoryGame({ closeMemoryGame, isMemoryGame, biaya }) {
                 {!isFinished && <div className="memory-game-modal-container">
                     <div className="memory-game-modal-header">
                         <h3 data-aos='fade-down'>Memory Game</h3>
-                        {/* <div className="temp-close-memory-game-modal-btn-container">
-                            <button className='temp-close-memory-game-modal-btn btn btn-warning fs-3' data-aos='zoom-in-left' onClick={closeMemoryGame}>&times;</button>
-                        </div> */}
                     </div>
                     {!isStart && !isFinished &&
                         <>
                             <div className="memory-game-modal-content" data-aos='fade-up'>
                                 <p>Selamat datang di Memory Game! Akan disajikan beberapa kartu di depan Anda. Setiap kartu memiliki pasangannya. Tugas Anda adalah untuk mencari semua pasangan kartu dengan putaran sedikit mungkin. Semakin sedikit putaran, semakin banyak uang!</p>
                                 <p>Ada beberapa ketentuan tentang jumlah putaran dan efek terhadap uang yang didapatkan</p>
-                                {/* <p>Jika jumlah putaran:</p> */}
                                 <p>Jika jumlah putaran = 6: x2.5</p>
                                 <p>Jika jumlah putaran &#8804; 9: x2.0</p>
                                 <p>Jika jumlah putaran &#8804; 14: x1.0</p>
@@ -288,17 +279,10 @@ function MemoryGame({ closeMemoryGame, isMemoryGame, biaya }) {
                             <div className="memory-game-content-header-container mb-4">
                                 <div className="memory-game-retry-btn-container">
                                     <button className="memory-game-retry-btn-container border-0 rounded-2 p-2" onClick={() => {
-                                        // setTimeout(() => {
-                                        //     shuffleCards();
-                                        // }, 1000)
                                         setTimeout(() => {
                                             setStart(false);
                                             setFinished(false);
                                         }, 1000)
-                                        // setTimeout(() => {
-                                        //     setStart(true);
-                                        //     shuffleCards();
-                                        // }, 2500)
                                     }}>Coba Ulang &#8634;</button>
                                 </div>
                                 <div className="total-turns-container">

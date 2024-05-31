@@ -20,7 +20,7 @@
     width: 50px;
 }
 
-@media only screen and (min-width: 376px) and (max-width: 422px){
+@media only screen and (min-width: 400px) and (max-width: 422px){
     .quiz-btn-container{
         top: 700px;
         left: 14em;
@@ -30,6 +30,15 @@
 
     .quiz-btn-container:hover{
         background-color: white;
+        border-radius: 0 100px 100px 100px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 406px){
+    .quiz-btn-container{
+        top: 700px;
+        left: 13em;
+        padding: 10px;
         border-radius: 0 100px 100px 100px;
     }
 }

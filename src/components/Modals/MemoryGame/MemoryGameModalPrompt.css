@@ -1,8 +1,6 @@
 .user-agree-prompt-modal-header-container {
     padding: 0px;
     text-align: center;
-    /* display: flex; */
-    /* justify-content: center; */
 }
 
 .user-agree-prompt-modal-overlay {
@@ -21,8 +19,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: beige;
-    /* width: 90vw; */
-    /* height: 90vh; */
     padding: 20px;
     border-radius: 5px;
     z-index: 1000x;
@@ -46,10 +42,6 @@
     width: fit-content;
     margin: 0px auto;
 }
-
-.user-agree-prompt-disagree-btn-container {}
-
-.user-agree-prompt-agree-btn-container {}
 
 .user-agree-prompt-agree-btn-container,
 .user-agree-prompt-disagree-btn-container {

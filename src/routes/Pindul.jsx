@@ -1,11 +1,8 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { Typewriter } from 'react-simple-typewriter'
 import BackToMapButton from '../components/Buttons/BackToMapButton'
 import goaPindul from '../assets/goa-pindul-assets/goa-pindul-2.jpg'
-import goaPindul2 from '../assets/goa-pindul-assets/goa-pindul-3.jpg'
 import InteractionCarousel from '../components/Carousel/InteractionCarousel'
-import GoaPindulData from '../components/Carousel/GoaPindulData'
 import InteractionCarouselButton from '../components/Buttons/InteractionCarouselButton'
 import EnergyBar from '../components/UserStatus/EnergyBar'
 import HappinessBar from '../components/UserStatus/HappinessBar'
@@ -18,9 +15,6 @@ export default function Map() {
 
     return (
         <>
-            {/* <div className="title-container">
-                <h1>Daerah Istimewa Yogyakarta</h1>
-            </div> */}
             <div className='background'>
                 <div className="bars">
                     <EnergyBar maxEgy={100} />
@@ -28,7 +22,6 @@ export default function Map() {
                     <Balance />
                 </div>
                 <div className="meaning p-3 rounded-3">
-                    {/* Selamat Datang di Goa Pindul! <br />{' '} */}
                     <span className='fs-5'>
                         <Typewriter
                             words={[

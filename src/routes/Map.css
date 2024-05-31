@@ -1,25 +1,31 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 5%, rgba(158, 158, 158, 1) 100%);
+    overflow-x: hidden;
+}
+
+.map-bungkus {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 5%, rgba(158, 158, 158, 1) 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .map-image-container {
     position: relative;
     width: fit-content;
     z-index: 2;
+    margin: 0 auto;
 }
 
-.map-bungkus {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.map-bungkus::before {
-    content: "";
-    position: absolute;
+.map-background-container{
     width: 100%;
-    height: 100dvh;
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 5%, rgba(158, 158, 158, 1) 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -1;
 }
 
 .map-image {
@@ -27,35 +33,31 @@
 }
 
 .pin-1 {
-    top: 10em;
-    left: 27.9em;
+    top: 12em;
+    left: 28.3em;
 }
 
 .pin-2 {
-    top: 27.5em;
+    top: 32.3em;
     left: 21.3em;
 }
 
 .pin-3 {
-    top: 19em;
-    left: 38.8em;
+    top: 21em;
+    left: 39.8em;
 }
 
 .pin-4 {
-    top: 16.7em;
+    top: 20em;
     left: 22.8em;
     z-index: 2;
 }
 
 .pin-5 {
-    top: 14.3em;
-    left: 21.15em;
+    top: 17em;
+    left: 20.5em;
     z-index: 1;
 }
-
-/* .pin-5:hover {
-    filter: grayscale(100%);
-} */
 
 .pin-1,
 .pin-2,
@@ -63,7 +65,6 @@
 .pin-4,
 .pin-5 {
     width: 70px;
-    height: auto;
     position: absolute;
     cursor: pointer;
 
@@ -73,30 +74,29 @@
     align-content: center;
 }
 
-
 .tooltip-container-1 {
-    top: 6.5em;
-    left: 24.8em;
+    top: 8em;
+    left: 25em;
 }
 
 .tooltip-container-2 {
-    top: 24em;
+    top: 28em;
     left: 18.1em;
 }
 
 .tooltip-container-3 {
-    top: 15.5em;
-    left: 37.15em;
+    top: 17em;
+    left: 38.2em;
 }
 
 .tooltip-container-4 {
-    top: 13em;
+    top: 16em;
     left: 20.35em;
 }
 
 .tooltip-container-5 {
-    top: 10.8em;
-    left: 19.65em;
+    top: 12.5em;
+    left: 19em;
 }
 
 .tooltip-container-1,
@@ -360,8 +360,8 @@
 
 @media only screen and (min-width: 835px) and (max-width: 841px) {
     .map-image {
-        width: 80vw;
-        margin: 5em 0;
+        width: 81vw;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -385,60 +385,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 825px) and (max-width: 835px) {
     .map-image {
-        width: 81vw;
-        margin: 5em 0;
+        width: 80vw;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -462,53 +462,53 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
@@ -516,7 +516,7 @@
 @media only screen and (min-width: 815px) and (max-width: 825px) {
     .map-image {
         width: 82vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -540,53 +540,53 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
@@ -594,7 +594,7 @@
 @media only screen and (min-width: 805px) and (max-width: 815px) {
     .map-image {
         width: 83vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -618,60 +618,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 794px) and (max-width: 805px) {
     .map-image {
         width: 84vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -695,60 +695,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 787px) and (max-width: 794px) {
     .map-image {
         width: 85vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -772,60 +772,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 777px) and (max-width: 787px) {
     .map-image {
         width: 86vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -849,60 +849,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 777px) {
     .map-image {
         width: 87vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -926,60 +926,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 752px) and (max-width: 762px) {
     .map-image {
-        width: 89vw;
-        margin: 5em 0;
+        width: 88vw;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -1003,60 +1003,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 762px) and (max-width: 768px) {
     .map-image {
-        width: 88vw;
-        margin: 5em 0;
+        width: 89vw;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -1080,60 +1080,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 743px) and (max-width: 752px) {
     .map-image {
         width: 90vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -1157,137 +1157,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
-    }
-
-    .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
-    }
-
-    .tooltip-container-2 {
-        top: 26.55em;
-        left: 16em;
-    }
-
-    .tooltip-container-3 {
-        top: 18.3em;
-        left: 34em;
-    }
-
-    .tooltip-container-4 {
-        top: 17.2em;
-        left: 18.4em;
-    }
-
-    .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
-    }
-}
-
-@media only screen and (min-width: 762px) and (max-width: 768px) {
-    .map-image {
-        width: 88vw;
-        margin: 5em 0;
-    }
-
-    .pin-1,
-    .pin-2,
-    .pin-3,
-    .pin-4,
-    .pin-5 {
-        width: 60px;
-    }
-
-    .tooltip-container-1,
-    .tooltip-container-2,
-    .tooltip-container-3,
-    .tooltip-container-4,
-    .tooltip-container-5 {
-        font-size: 14px;
-    }
-
-    .tooltip-image {
-        width: 30px;
-    }
-
-    .pin-1 {
-        top: 12.6em;
-        left: 22em;
-    }
-
-    .pin-2 {
-        top: 26.55em;
-        left: 16.75em;
-    }
-
-    .pin-3 {
-        top: 19.3em;
-        left: 31em;
-    }
-
-    .pin-4 {
         top: 18.2em;
-        left: 18.1em;
-    }
-
-    .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 734px) and (max-width: 743px) {
     .map-image {
         width: 91vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -1311,137 +1234,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
-    }
-
-    .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
-    }
-
-    .tooltip-container-2 {
-        top: 26.55em;
-        left: 16em;
-    }
-
-    .tooltip-container-3 {
-        top: 18.3em;
-        left: 34em;
-    }
-
-    .tooltip-container-4 {
-        top: 17.2em;
-        left: 18.4em;
-    }
-
-    .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
-    }
-}
-
-@media only screen and (min-width: 762px) and (max-width: 768px) {
-    .map-image {
-        width: 88vw;
-        margin: 5em 0;
-    }
-
-    .pin-1,
-    .pin-2,
-    .pin-3,
-    .pin-4,
-    .pin-5 {
-        width: 60px;
-    }
-
-    .tooltip-container-1,
-    .tooltip-container-2,
-    .tooltip-container-3,
-    .tooltip-container-4,
-    .tooltip-container-5 {
-        font-size: 14px;
-    }
-
-    .tooltip-image {
-        width: 30px;
-    }
-
-    .pin-1 {
-        top: 12.6em;
-        left: 22em;
-    }
-
-    .pin-2 {
-        top: 26.55em;
-        left: 16.75em;
-    }
-
-    .pin-3 {
-        top: 19.3em;
-        left: 31em;
-    }
-
-    .pin-4 {
         top: 18.2em;
-        left: 18.1em;
-    }
-
-    .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 726px) and (max-width: 734px) {
     .map-image {
         width: 92vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -1465,214 +1311,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
-    }
-
-    .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
-    }
-
-    .tooltip-container-2 {
-        top: 26.55em;
-        left: 16em;
-    }
-
-    .tooltip-container-3 {
-        top: 18.3em;
-        left: 34em;
-    }
-
-    .tooltip-container-4 {
-        top: 17.2em;
-        left: 18.4em;
-    }
-
-    .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
-    }
-}
-
-@media only screen and (min-width: 762px) and (max-width: 768px) {
-    .map-image {
-        width: 88vw;
-        margin: 5em 0;
-    }
-
-    .pin-1,
-    .pin-2,
-    .pin-3,
-    .pin-4,
-    .pin-5 {
-        width: 60px;
-    }
-
-    .tooltip-container-1,
-    .tooltip-container-2,
-    .tooltip-container-3,
-    .tooltip-container-4,
-    .tooltip-container-5 {
-        font-size: 14px;
-    }
-
-    .tooltip-image {
-        width: 30px;
-    }
-
-    .pin-1 {
-        top: 12.6em;
-        left: 22em;
-    }
-
-    .pin-2 {
-        top: 26.55em;
-        left: 16.75em;
-    }
-
-    .pin-3 {
-        top: 19.3em;
-        left: 31em;
-    }
-
-    .pin-4 {
         top: 18.2em;
-        left: 18.1em;
-    }
-
-    .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
-    }
-}
-
-@media only screen and (min-width: 726px) and (max-width: 734px) {
-    .map-image {
-        width: 92vw;
-        margin: 5em 0;
-    }
-
-    .pin-1,
-    .pin-2,
-    .pin-3,
-    .pin-4,
-    .pin-5 {
-        width: 60px;
-    }
-
-    .tooltip-container-1,
-    .tooltip-container-2,
-    .tooltip-container-3,
-    .tooltip-container-4,
-    .tooltip-container-5 {
-        font-size: 14px;
-    }
-
-    .tooltip-image {
-        width: 30px;
-    }
-
-    .pin-1 {
-        top: 12.6em;
-        left: 22em;
-    }
-
-    .pin-2 {
-        top: 26.55em;
-        left: 16.75em;
-    }
-
-    .pin-3 {
-        top: 19.3em;
-        left: 31em;
-    }
-
-    .pin-4 {
-        top: 18.2em;
-        left: 18.1em;
-    }
-
-    .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
-    }
-
-    .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
-    }
-
-    .tooltip-container-2 {
-        top: 26.55em;
-        left: 16em;
-    }
-
-    .tooltip-container-3 {
-        top: 18.3em;
-        left: 34em;
-    }
-
-    .tooltip-container-4 {
-        top: 17.2em;
-        left: 18.4em;
-    }
-
-    .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 717px) and (max-width: 726px) {
     .map-image {
         width: 93vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -1696,137 +1388,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
-    }
-
-    .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
-    }
-
-    .tooltip-container-2 {
-        top: 26.55em;
-        left: 16em;
-    }
-
-    .tooltip-container-3 {
-        top: 18.3em;
-        left: 34em;
-    }
-
-    .tooltip-container-4 {
-        top: 17.2em;
-        left: 18.4em;
-    }
-
-    .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
-    }
-}
-
-@media only screen and (min-width: 703px) and (max-width: 712px) {
-    .map-image {
-        width: 95vw;
-        margin: 5em 0;
-    }
-
-    .pin-1,
-    .pin-2,
-    .pin-3,
-    .pin-4,
-    .pin-5 {
-        width: 60px;
-    }
-
-    .tooltip-container-1,
-    .tooltip-container-2,
-    .tooltip-container-3,
-    .tooltip-container-4,
-    .tooltip-container-5 {
-        font-size: 14px;
-    }
-
-    .tooltip-image {
-        width: 30px;
-    }
-
-    .pin-1 {
-        top: 12.6em;
-        left: 22em;
-    }
-
-    .pin-2 {
-        top: 26.55em;
-        left: 16.75em;
-    }
-
-    .pin-3 {
-        top: 19.3em;
-        left: 31em;
-    }
-
-    .pin-4 {
         top: 18.2em;
-        left: 18.1em;
-    }
-
-    .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 712px) and (max-width: 717px) {
     .map-image {
         width: 94vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -1850,60 +1465,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 703px) and (max-width: 712px) {
     .map-image {
         width: 95vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -1927,60 +1542,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 695px) and (max-width: 703px) {
     .map-image {
         width: 96vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -2004,60 +1619,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 690px) and (max-width: 695px) {
     .map-image {
         width: 97vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -2081,60 +1696,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 683px) and (max-width: 690px) {
     .map-image {
         width: 98vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -2158,60 +1773,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 675px) and (max-width: 683px) {
     .map-image {
         width: 99vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -2235,60 +1850,60 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
 @media only screen and (min-width: 668px) and (max-width: 675px) {
     .map-image {
         width: 100vw;
-        margin: 5em 0;
+        margin: 5em 0 0;
     }
 
     .pin-1,
@@ -2312,53 +1927,53 @@
     }
 
     .pin-1 {
-        top: 12.6em;
-        left: 22em;
+        top: 14.3em;
+        left: 22.3em;
     }
 
     .pin-2 {
-        top: 26.55em;
+        top: 30.5em;
         left: 16.75em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 31em;
     }
 
     .pin-4 {
-        top: 18.2em;
+        top: 20.8em;
         left: 18.1em;
     }
 
     .pin-5 {
-        top: 16.2em;
-        left: 16.6em;
+        top: 18.2em;
+        left: 16.1em;
     }
 
     .tooltip-container-1 {
-        top: 10.6em;
-        left: 22em;
+        top: 12em;
+        left: 22.5em;
     }
 
     .tooltip-container-2 {
-        top: 26.55em;
+        top: 30em;
         left: 16em;
     }
 
     .tooltip-container-3 {
-        top: 18.3em;
+        top: 19.8em;
         left: 34em;
     }
 
     .tooltip-container-4 {
-        top: 17.2em;
+        top: 19em;
         left: 18.4em;
     }
 
     .tooltip-container-5 {
-        top: 15.2em;
-        left: 17.6em;
+        top: 16.5em;
+        left: 17.1em;
     }
 }
 
@@ -2389,28 +2004,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -2419,23 +2034,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -2466,28 +2081,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -2496,23 +2111,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -2543,28 +2158,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -2573,23 +2188,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -2620,28 +2235,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -2650,23 +2265,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -2697,28 +2312,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -2727,23 +2342,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -2774,28 +2389,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -2804,23 +2419,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -2857,28 +2472,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -2887,23 +2502,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -2940,28 +2555,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -2970,23 +2585,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -3023,28 +2638,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -3053,23 +2668,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -3106,28 +2721,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -3136,23 +2751,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -3189,28 +2804,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -3219,23 +2834,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -3272,28 +2887,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -3302,23 +2917,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -3355,28 +2970,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -3385,23 +3000,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -3438,28 +3053,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -3468,23 +3083,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -3521,28 +3136,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -3551,23 +3166,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -3604,28 +3219,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -3634,23 +3249,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -3687,28 +3302,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -3717,23 +3332,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -3770,28 +3385,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -3800,23 +3415,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -3853,28 +3468,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -3883,23 +3498,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -3936,28 +3551,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -3966,23 +3581,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -4019,28 +3634,28 @@
     }
 
     .pin-1 {
-        top: 14.2em;
+        top: 15em;
         left: 17.5em;
     }
 
     .pin-2 {
-        top: 24.9em;
+        top: 28.1em;
         left: 13.2em;
     }
 
     .pin-3 {
-        top: 19.3em;
+        top: 21em;
         left: 24.5em;
     }
 
     .pin-4 {
-        top: 18.4em;
+        top: 20.5em;
         left: 14.3em;
     }
 
     .pin-5 {
-        top: 16.75em;
-        left: 13.15em;
+        top: 18.5em;
+        left: 12.8em;
     }
 
     .tooltip-container-1 {
@@ -4049,23 +3664,23 @@
     }
 
     .tooltip-container-2 {
-        top: 36em;
+        top: 40em;
         left: 18.3em;
     }
 
     .tooltip-container-3 {
-        top: 27em;
+        top: 28em;
         left: 38em;
     }
 
     .tooltip-container-4 {
-        top: 25.5em;
+        top: 27em;
         left: 20.9em;
     }
 
     .tooltip-container-5 {
-        top: 23em;
-        left: 20em;
+        top: 24em;
+        left: 19.8em;
     }
 }
 
@@ -4103,28 +3718,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -4133,13 +3748,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -4148,7 +3763,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -4187,28 +3802,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -4217,13 +3832,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -4232,7 +3847,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -4271,28 +3886,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -4301,13 +3916,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -4316,7 +3931,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -4355,28 +3970,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -4385,13 +4000,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -4400,7 +4015,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -4439,28 +4054,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -4469,13 +4084,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -4484,7 +4099,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -4523,28 +4138,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -4553,13 +4168,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -4568,7 +4183,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -4607,28 +4222,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -4637,13 +4252,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -4652,7 +4267,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -4691,28 +4306,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -4721,13 +4336,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -4736,7 +4351,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -4775,28 +4390,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -4805,13 +4420,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -4820,7 +4435,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -4859,28 +4474,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -4889,13 +4504,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -4904,7 +4519,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -4943,28 +4558,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -4973,13 +4588,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -4988,7 +4603,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -5027,28 +4642,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -5057,13 +4672,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -5072,7 +4687,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -5111,28 +4726,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -5141,13 +4756,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -5156,7 +4771,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -5195,28 +4810,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -5225,13 +4840,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -5240,7 +4855,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -5279,28 +4894,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -5309,13 +4924,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -5324,7 +4939,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -5363,28 +4978,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -5393,13 +5008,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -5408,7 +5023,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -5447,28 +5062,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -5477,13 +5092,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -5492,7 +5107,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -5531,28 +5146,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -5561,13 +5176,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -5576,7 +5191,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -5615,28 +5230,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -5645,13 +5260,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -5660,7 +5275,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -5699,28 +5314,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -5729,13 +5344,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -5744,7 +5359,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -5783,28 +5398,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -5813,13 +5428,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -5828,7 +5443,7 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
@@ -5867,28 +5482,28 @@
     }
 
     .pin-1 {
-        top: 15.8em;
-        left: 13.85em;
+        top: 16.5em;
+        left: 14em;
     }
 
     .pin-2 {
-        top: 24.5em;
+        top: 27em;
         left: 10.5em;
     }
 
     .pin-3 {
-        top: 20em;
-        left: 19.5em;
+        top: 21em;
+        left: 20em;
     }
 
     .pin-4 {
-        top: 19.4em;
+        top: 21em;
         left: 11.5em;
     }
 
     .pin-5 {
-        top: 17.95em;
-        left: 10.45em;
+        top: 19.3em;
+        left: 10.2em;
     }
 
     .tooltip-container-1 {
@@ -5897,13 +5512,13 @@
     }
 
     .tooltip-container-2 {
-        top: 43.5em;
+        top: 47em;
         left: 17.9em;
     }
 
     .tooltip-container-3 {
         top: 34.8em;
-        left: 37.55em;
+        left: 38.55em;
     }
 
     .tooltip-container-4 {
@@ -5912,15 +5527,13 @@
     }
 
     .tooltip-container-5 {
-        top: 30em;
+        top: 31em;
         left: 19.5em;
     }
 }
 
 @media (max-width: 442px) {
     .map-image-container {
-        left: 55px;
-        width: 110%;
         height: auto;
     }
 
@@ -5932,9 +5545,8 @@
 
 @media only screen and (min-width: 415px) and (max-width: 422px) {
     .map-image {
-        width: 300vw;
-        margin: 10em 0 0 -5em;
-        overflow: hidden;
+        width: 100%;
+        margin: 10em 0 0 0;
     }
 
     .pin-1,
@@ -5947,60 +5559,189 @@
 
     .pin-1 {
         top: 14.5em;
-        left: 9.5em;
+        left: 13.2em;
+    }
+
+    .pin-2 {
+        top: 25em;
+        left: 10em;
+    }
+
+    .pin-3 {
+        top: 19em;
+        left: 20em;
+    }
+
+    .pin-4 {
+        top: 18.8em;
+        left: 10.5em;
+    }
+
+    .pin-5 {
+        top: 17.3em;
+        left: 9.4em;
+    }
+
+    .tooltip-container-1 {
+        top: 10em;
+        left: 9.8em;
+    }
+
+    .tooltip-container-2 {
+        top: 20em;
+        left: 6.5em;
+    }
+
+    .tooltip-container-3 {
+        top: 14em;
+        left: 18em;
+    }
+
+    .tooltip-container-4 {
+        top: 14em;
+        left: 7.8em;
+    }
+
+    .tooltip-container-5 {
+        top: 13em;
+        left: 7.5em;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 415px){
+    .map-image {
+        width: 100%;
+        margin: 10em 0 0 0;
+    }
+
+    .pin-1,
+    .pin-2,
+    .pin-3,
+    .pin-4,
+    .pin-5 {
+        width: 60px;
+    }
+
+    .pin-1 {
+        top: 14.5em;
+        left: 13em;
+    }
+
+    .pin-2 {
+        top: 24.8em;
+        left: 10em;
+    }
+
+    .pin-3 {
+        top: 19em;
+        left: 20em;
+    }
+
+    .pin-4 {
+        top: 18.8em;
+        left: 10.5em;
+    }
+
+    .pin-5 {
+        top: 17.3em;
+        left: 9.2em;
+    }
+
+    .tooltip-container-1 {
+        top: 10em;
+        left: 9.8em;
+    }
+
+    .tooltip-container-2 {
+        top: 20em;
+        left: 6.5em;
+    }
+
+    .tooltip-container-3 {
+        top: 14em;
+        left: 18em;
+    }
+
+    .tooltip-container-4 {
+        top: 14em;
+        left: 7.8em;
+    }
+
+    .tooltip-container-5 {
+        top: 13em;
+        left: 7.5em;
+    }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 400px){
+    .map-image {
+        width: 100%;
+        margin: 10em 0 0 0;
+    }
+
+    .pin-1,
+    .pin-2,
+    .pin-3,
+    .pin-4,
+    .pin-5 {
+        width: 60px;
+    }
+
+    .pin-1 {
+        top: 14.5em;
+        left: 12.4em;
     }
 
     .pin-2 {
         top: 24em;
-        left: 6em;
+        left: 9.4em;
     }
 
     .pin-3 {
         top: 19em;
-        left: 15.5em;
+        left: 19em;
     }
 
     .pin-4 {
-        top: 18.5em;
-        left: 7.1em;
+        top: 18.3em;
+        left: 10em;
     }
 
     .pin-5 {
-        top: 16.8em;
-        left: 5.8em;
+        top: 17em;
+        left: 8.8em;
     }
 
     .tooltip-container-1 {
-        top: 11em;
-        left: 6.1em;
+        top: 10em;
+        left: 9.8em;
     }
 
     .tooltip-container-2 {
-        top: 21em;
-        left: 2.5em;
+        top: 20em;
+        left: 6.5em;
     }
 
     .tooltip-container-3 {
-        top: 15em;
-        left: 13.7em;
+        top: 14em;
+        left: 18em;
     }
 
     .tooltip-container-4 {
-        top: 15em;
-        left: 4.5em;
+        top: 14em;
+        left: 7.8em;
     }
 
     .tooltip-container-5 {
         top: 13em;
-        left: 3.9em;
+        left: 7.5em;
     }
 }
 
-@media only screen and (min-width: 376px) and (max-width: 415px) {
+@media only screen and (min-width: 376px) and (max-width: 380px) {
     .map-image {
-        width: 300vw;
-        margin: 10em 0 0 -5em;
-        overflow: hidden;
+        width: 100%;
+        margin: 10em 0 0 0;
     }
 
     .pin-1,
@@ -6013,59 +5754,59 @@
 
     .pin-1 {
         top: 14.5em;
-        left: 9.2em;
+        left: 12.4em;
     }
 
     .pin-2 {
-        top: 23.8em;
-        left: 5.8em;
+        top: 24em;
+        left: 9.4em;
     }
 
     .pin-3 {
         top: 19em;
-        left: 15.5em;
+        left: 19em;
     }
 
     .pin-4 {
         top: 18.3em;
-        left: 6.9em;
+        left: 10em;
     }
 
     .pin-5 {
-        top: 16.8em;
-        left: 5.6em;
+        top: 17em;
+        left: 8.8em;
     }
 
     .tooltip-container-1 {
-        top: 11em;
-        left: 6.1em;
+        top: 10em;
+        left: 9.8em;
     }
 
     .tooltip-container-2 {
-        top: 21em;
-        left: 2.5em;
+        top: 20em;
+        left: 6.5em;
     }
 
     .tooltip-container-3 {
-        top: 15em;
-        left: 13.7em;
+        top: 14em;
+        left: 18em;
     }
 
     .tooltip-container-4 {
-        top: 15em;
-        left: 4.5em;
+        top: 14em;
+        left: 7.8em;
     }
 
     .tooltip-container-5 {
         top: 13em;
-        left: 3.9em;
+        left: 7.5em;
     }
 }
 
 @media only screen and (max-width: 376px) {
     .map-image {
-        min-width: 110vw;
-        margin: 8em -4.5em 0;
+        min-width: 360px;
+        margin: 8em -2.8em 0;
         overflow: hidden;
     }
 

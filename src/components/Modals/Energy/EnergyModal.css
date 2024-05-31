@@ -9,8 +9,6 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    /* opacity: 0; */
-    /* transition: opacity 0.5s ease-in-out; */
     z-index: 1001;
 }
 
@@ -38,16 +36,7 @@
     }
 }
 
-.no-egy-modal-content {
-    /* padding: 15px;
-    list-style: none;
-    text-align: center; */
-}
-
 .no-egy-reset-modal-btn-container {
-    /* position: absolute;
-    right: -15px;
-    top: -15px; */
     text-align: center;
 }
 

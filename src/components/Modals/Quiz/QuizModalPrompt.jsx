@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { createPortal } from "react-dom"
 import { useRef, useEffect, useContext, useState } from "react"
 import { BalanceContext } from "../../../contexts/BalanceContext";

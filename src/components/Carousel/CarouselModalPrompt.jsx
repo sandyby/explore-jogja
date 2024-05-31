@@ -1,25 +1,12 @@
 import { createPortal } from "react-dom"
-import { useRef, useEffect, useContext, useState } from "react"
+import { useEffect, useContext, useState } from "react"
 import { BalanceContext } from "../../contexts/BalanceContext";
 import './CarouselModalPrompt.css'
 
 export default function CarouselModalPrompt({ openPrompt, isShowing, closePrompt, kegiatan, biaya }) {
-    // const modalRef = useRef(null);
     const [isBalanceEnough, setIsBalanceEnough] = useState(true);
     const [isDone, setIsDone] = useState(false);
     const { currMoney, setCurrMoney } = useContext(BalanceContext);
-
-    // useEffect(() => {
-    //     const handleClickOutside = (event) => {
-    //         if (modalRef.current && !modalRef.current.contains(event.target)) {
-    //             closePrompt();
-    //         }
-    //     };
-    //     document.addEventListener("mousedown", handleClickOutside);
-    //     return () => {
-    //         document.removeEventListener("mousedown", handleClickOutside);
-    //     };
-    // }, [closePrompt]);
 
     const playHandler = () => {
         setCurrMoney(prevMoney => prevMoney - biaya);
@@ -34,7 +21,6 @@ export default function CarouselModalPrompt({ openPrompt, isShowing, closePrompt
     return createPortal(
         <>
             <div className="carousel-user-agree-prompt-modal-overlay">
-                {/* <div className="carousel-user-agree-prompt-modal-container" ref={modalRef}> */}
                 <div className="carousel-user-agree-prompt-modal-container">
                     {!isDone &&
                         <>

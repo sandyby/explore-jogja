@@ -1,8 +1,6 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { Typewriter } from 'react-simple-typewriter'
 import BackToMapButton from '../components/Buttons/BackToMapButton'
-// import prambanan from '../assets/temp-assets/prambanan-uhuy.PNG'
 import prambanan from '../assets/prambanan-assets/prambanan-2.jpg'
 import InteractionCarousel from '../components/Carousel/InteractionCarousel'
 import PrambananDataSet from '../components/Carousel/PrambananData'
@@ -14,7 +12,6 @@ import './Prambanan.css'
 
 export default function Map() {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [counter, setCounter] = useState(0);
 
     return (
         <>

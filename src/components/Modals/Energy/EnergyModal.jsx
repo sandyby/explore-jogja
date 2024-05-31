@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { createPortal } from "react-dom";
 import { BalanceContext } from "../../../contexts/BalanceContext";
 import { useContext } from "react";
@@ -17,7 +16,6 @@ export default function EnergyModal({ setShowAlert, setCurrEgy }) {
                     </div>
                     <div className="no-egy-modal-content">
                         <div className="no-egy-reset-modal-btn-container">
-                            {/* <button className='no-egy-reset-modal-btn btn btn-warning' */}
                             <button className='no-egy-reset-modal-btn border-0 rounded-2'
                                 onClick={() => {
                                     setShowAlert(false);

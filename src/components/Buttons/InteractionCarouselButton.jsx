@@ -1,6 +1,5 @@
 import question from '../../assets/game-question.png'
 import './InteractionCarouselButton.css'
-// import ModalCarousel from '../Modals/Carousel/ModalCarousel';
 
 const InteractionCarouselButton = ({ openCarousel }) => {
   return (

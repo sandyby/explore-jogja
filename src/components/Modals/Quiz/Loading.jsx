@@ -14,7 +14,7 @@ function Loading({ colors, size }) {
         };
     }
 
-    const loadingSize = size ? size : "medium"; // medium by default
+    const loadingSize = size ? size : "medium";
     
     return <div className={"loader " + loadingSize} style={style} />;
 }

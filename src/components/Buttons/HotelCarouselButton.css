@@ -20,7 +20,7 @@
     width: 50px;
 }
 
-@media only screen and (min-width: 376px) and (max-width: 422px){
+@media only screen and (min-width: 406px) and (max-width: 422px){
     .hotel-carousel-btn-container{
         top: 700px;
         left: 21em;
@@ -30,6 +30,15 @@
 
     .hotel-carousel-btn-container:hover{
         background-color: white;
+        border-radius: 0 100px 100px 100px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 406px){
+    .hotel-carousel-btn-container{
+        top: 700px;
+        left: 19.5em;
+        padding: 10px;
         border-radius: 0 100px 100px 100px;
     }
 }

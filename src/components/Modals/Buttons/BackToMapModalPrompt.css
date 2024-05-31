@@ -1,8 +1,6 @@
 .back-to-map-prompt-modal-header-container {
     padding: 0px;
     text-align: center;
-    /* display: flex; */
-    /* justify-content: center; */
 }
 
 .back-to-map-prompt-modal-overlay {
@@ -21,16 +19,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: beige;
-    /* width: 90vw; */
-    /* height: 90vh; */
     padding: 20px;
     border-radius: 5px;
     z-index: 1000x;
 }
-
-.back-to-map-prompt-disagree-btn-container {}
-
-.back-to-map-prompt-agree-btn-container {}
 
 .back-to-map-prompt-agree-btn-container,
 .back-to-map-prompt-disagree-btn-container {

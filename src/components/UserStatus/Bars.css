@@ -31,7 +31,8 @@
 
 .balance-num {
     font-size: 30px;
-    width: 170%;
+    width: fit-content;
+    max-width: 170%;
     margin-top: 5px;
     margin-left: 10px;
     position: relative;

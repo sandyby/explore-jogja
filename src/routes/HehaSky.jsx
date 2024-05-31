@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { Typewriter } from 'react-simple-typewriter'
 import BackToMapButton from '../components/Buttons/BackToMapButton'
 import hehaSky from '../assets/heha-sky-view-assets/heha-sky-view.jpeg'

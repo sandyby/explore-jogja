@@ -41,10 +41,9 @@
         position: absolute;
         top: 65%;
         z-index: 1;
-        background-color: beige;
         padding: 10px;
         border-radius: 5px;
-        height: 35vh;
+        height: 35dvh;
         align-content: center;
     }
 

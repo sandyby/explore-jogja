@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { createPortal } from "react-dom";
 import { BalanceContext } from "../../../contexts/BalanceContext";
 import { useContext, useEffect, useState } from "react";
@@ -24,7 +23,6 @@ export default function HappinessModal({ setShowAlert, setCurrHap }) {
                     </div>
                     <div className="no-hap-modal-content">
                         <div className="no-hap-reset-modal-btn-container">
-                            {/* <button className='no-hap-reset-modal-btn btn btn-warning' */}
                             <button className='no-hap-reset-modal-btn border-0 rounded-2'
                                 onClick={() => {
                                     setShowAlert(false);

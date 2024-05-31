@@ -65,13 +65,6 @@
     color: red;
 }
 
-/* .card-grid {
-    margin: 20px 0px 0px 0px;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-} */
-
 .card-grid {
     width: 100%;
     grid-gap: 10px;
@@ -130,9 +123,6 @@ img.front-side {
     border-radius: 5px;
     z-index: 1000;
     text-align: center;
-}
-
-.finish-memory-game-header-container {
 }
 
 .finish-memory-game-content {

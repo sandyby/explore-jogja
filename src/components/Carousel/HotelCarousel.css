@@ -64,14 +64,9 @@
 .close-hotel-carousel-modal-btn-container button:hover{
     color: red;
     background-color: rgb(225, 181, 87);
+    border: none;
+    box-shadow: none;
 }
-
-/*
-.close-hotel-carousel-modal-btn {
-    font-size: 12px;
-    font-weight: bold;
-    padding: auto;
-} */
 
 .close-hotel-carousel-modal-btn-container button {
     padding: 0 13px;
@@ -97,7 +92,6 @@
 .hotel-carousel-slider .slick-slide {
     padding: 0 10px;
 }
-
 
 .hotel-carousel-card {
     background-color: white;
@@ -145,12 +139,10 @@
     padding: 8px;
 }
 
-
 .text-xl {
     font-size: 1.25rem;
     font-weight: 600;
 }
-
 
 .text-center {
     text-align: center;

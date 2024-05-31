@@ -39,13 +39,13 @@ export default function BackToMapModalPrompt({ closePrompt }) {
                         </div>
                         <div className="back-to-map-prompt-agree-btn-container">
                             {/* kalo hujan: */}
-                            {/* <Link to="/map">
-                                <button data-aos='fade-up' className="agree-btn btn btn-success" onClick={() => { setShowRainyModal(true) }}>Ya</button>
-                            </Link> */}
-                            {/* kalo ga hujan: */}
                             <Link to="/map">
-                                <button data-aos='fade-up' className="agree-btn btn btn-success ms-1" onClick={() => { setShowRainyModal(false) }}>Ya</button>
+                                <button data-aos='fade-up' className="agree-btn btn btn-success" onClick={() => { setShowRainyModal(true) }}>Ya</button>
                             </Link>
+                            {/* kalo ga hujan: */}
+                            {/* <Link to="/map">
+                                <button data-aos='fade-up' className="agree-btn btn btn-success ms-1" onClick={() => { setShowRainyModal(false) }}>Ya</button>
+                            </Link> */}
                         </div>
                     </div>
                 </div>

@@ -1,10 +1,13 @@
 import { createPortal } from 'react-dom';
 import { useEffect, useRef } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
-import foto from '../../../assets/back-card.png';
+import jennifer from '../../../assets/profil/jennifer.jpeg'
+import rafi from '../../../assets/profil/rafi.jpeg'
+import tarekh from '../../../assets/profil/tarekh.jpg'
+import sandy from '../../../assets/profil/sandy.jpg'
 import instagram from '../../../assets/Instagram.png';
 import './Credits.css';
+import 'aos/dist/aos.css';
 
 function Credits({ closeCredits }) {
     const modalRef = useRef(null);
@@ -38,7 +41,7 @@ function Credits({ closeCredits }) {
                     <div>
                         <div data-aos='fade-up' className="credits-modal-content d-flex flex-wrap gap-3 justify-content-center">
                             <div className='credits rounded-2'>
-                                <div className='credits-foto'><img className='profil rounded-circle' src={foto} alt="" /></div>
+                                <div className='credits-foto'><img className='profil rounded-circle' src={jennifer} alt="" /></div>
                                 <div className='credits-nama'>
                                     <h4>Jennifer Maria Daniella Kastilong</h4>
                                     <h5>00000106205</h5>
@@ -48,7 +51,7 @@ function Credits({ closeCredits }) {
                                 </div>
                             </div>
                             <div className='credits-2 rounded-2'>
-                                <div className='credits-foto'><img className='profil rounded-circle' src={foto} alt="" /></div>
+                                <div className='credits-foto'><img className='profil rounded-circle' src={rafi} alt="" /></div>
                                 <div className='credits-nama-2'>
                                     <h4>Rafi Ghadhanfar Muhammad</h4>
                                     <h5>00000108353</h5>
@@ -58,7 +61,7 @@ function Credits({ closeCredits }) {
                                 </div>
                             </div>
                             <div className='credits-3 rounded-2'>
-                                <div className='credits-foto'><img className='profil rounded-circle' src={foto} alt="" /></div>
+                                <div className='credits-foto'><img className='profil rounded-circle' src={sandy} alt="" /></div>
                                 <div className='credits-nama-3'>
                                     <h4>Sandy Bonfilio Yuvens</h4>
                                     <h5>00000106442</h5>
@@ -68,7 +71,7 @@ function Credits({ closeCredits }) {
                                 </div>
                             </div>
                             <div className='credits-4 rounded-2'>
-                                <div className='credits-foto'><img className='profil rounded-circle' src={foto} alt="" /></div>
+                                <div className='credits-foto'><img className='profil rounded-circle' src={tarekh} alt="" /></div>
                                 <div className='credits-nama-4'>
                                     <h4>Muhamad Tarekh</h4>
                                     <h5>00000108776</h5>
