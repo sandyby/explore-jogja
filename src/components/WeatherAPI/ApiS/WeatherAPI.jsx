@@ -40,6 +40,7 @@ export default function WeatherAPI() {
         fetch(`${api.base}weather?q=Yogyakarta&units=metric&APPID=${api.key}`)
             .then(res => res.json())
             .then(result => {
+                console.log("fetched");
                 setWeather(result);
                 if (result.weather && result.weather[0].main === "Rain") {
                     setIsRaining(true);
@@ -54,7 +55,7 @@ export default function WeatherAPI() {
 
     useEffect(() => {
         getWeather();
-        const interval = setInterval(getWeather, 10000);
+        const interval = setInterval(getWeather, 600000);
         return () => clearInterval(interval);
     });
 
