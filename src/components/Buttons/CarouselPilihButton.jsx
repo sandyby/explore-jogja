@@ -25,8 +25,8 @@ export default function CarouselPilihButton({ kegiatan, biaya, energi, happiness
     }, [currMoney, currEgy, biaya]);
 
     const pilihHandler = () => {
-        console.log(currEgy);
-        console.log(energi);
+        // console.log(currEgy);
+        // console.log(energi);
         setCurrEgy(prevEgy => (prevEgy + energi > 100 ? 100 : (prevEgy + energi)));
         setCurrMoney(prevMoney => prevMoney - biaya);
         const happinessGet = happiness;

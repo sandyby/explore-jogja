@@ -14,7 +14,6 @@ import Malioboro from './routes/Malioboro';
 import ErrorPage from "./routes/ErrorPage";
 
 export default function App() {
-  console.log('App component rendered');
   const basename = process.env.NODE_ENV === 'production' ? '/explore-jogja' : '';
   return (
     <RainyProvider>

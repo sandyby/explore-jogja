@@ -37,7 +37,7 @@ function QuizAPI({ closeQuiz }) {
         try {
             const response = await fetch("https://6634b6ea9bb0df2359a27bc0.mockapi.io/questions");
             const qstnResp = await response.json();
-            console.log(qstnResp);
+            // console.log(qstnResp);
             setAllQuestions(qstnResp);
 
             const randomIndexes = [];
