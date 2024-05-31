@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/explore-jogja/static/css/main.dfa33eab.css",
-    "main.js": "/explore-jogja/static/js/main.1ee71192.js",
+    "main.css": "/explore-jogja/static/css/main.50651595.css",
+    "main.js": "/explore-jogja/static/js/main.ed6473d0.js",
     "static/js/885.22eb1240.chunk.js": "/explore-jogja/static/js/885.22eb1240.chunk.js",
     "static/media/pantai-parangtritis.png": "/explore-jogja/static/media/pantai-parangtritis.7bc3a96cf3ba3dcaace5.png",
+    "static/media/peta-jogja.png": "/explore-jogja/static/media/peta-jogja.3ee0379f882836491aaf.png",
     "static/media/malioboro-1.jpg": "/explore-jogja/static/media/malioboro-1.fe4841ad0662d4b1828b.jpg",
-    "static/media/peta-jogja.png": "/explore-jogja/static/media/peta-jogja.eaeb7d5c266da281ba94.png",
     "static/media/prambanan-1.png": "/explore-jogja/static/media/prambanan-1.f4d12cab98f1c990b4bf.png",
     "static/media/prambanan.png": "/explore-jogja/static/media/prambanan.51612c03db6cfe3065f9.png",
     "static/media/melia-purosani-yogyakarta-1.jpg": "/explore-jogja/static/media/melia-purosani-yogyakarta-1.3d2872f713b1f8f30f9f.jpg",
@@ -13,6 +13,7 @@
     "static/media/durga.jpg": "/explore-jogja/static/media/durga.403bb073e7238afc0511.jpg",
     "static/media/pasar-malioboro.jpg": "/explore-jogja/static/media/pasar-malioboro.2f0822f7bb5a218c481d.jpg",
     "static/media/maliboro.png": "/explore-jogja/static/media/maliboro.10984f07f50ebf4d5b07.png",
+    "static/media/jennifer.jpeg": "/explore-jogja/static/media/jennifer.bf0298c9371f3eddb015.jpeg",
     "static/media/heha-sky-view.png": "/explore-jogja/static/media/heha-sky-view.50cd1473c39cf3a2496a.png",
     "static/media/map.png": "/explore-jogja/static/media/map.38d8fb7305038264753c.png",
     "static/media/rafting-cropped-2.png": "/explore-jogja/static/media/rafting-cropped-2.1c0c6cc93583a8851cb1.png",
@@ -32,9 +33,8 @@
     "static/media/sunset.jpg": "/explore-jogja/static/media/sunset.812ecfaabf41a603216e.jpg",
     "static/media/home-page.png": "/explore-jogja/static/media/home-page.5c8db7b20c87ff19b369.png",
     "static/media/paralayang.jpeg": "/explore-jogja/static/media/paralayang.b9ef989c70790a2d3202.jpeg",
-    "static/media/gudeg-1.PNG": "/explore-jogja/static/media/gudeg-1.708221af63e476f58c0f.PNG",
-    "static/media/gudeg-2.png": "/explore-jogja/static/media/gudeg-2.708221af63e476f58c0f.png",
     "static/media/gudeg.PNG": "/explore-jogja/static/media/gudeg.708221af63e476f58c0f.PNG",
+    "static/media/gudeg.png": "/explore-jogja/static/media/gudeg.708221af63e476f58c0f.png",
     "static/media/game-coin.png": "/explore-jogja/static/media/game-coin.fe3ec6a7eebb9d9d9cff.png",
     "static/media/krecek.png": "/explore-jogja/static/media/krecek.188e0ef0a894ac587a07.png",
     "static/media/sambel-goreng-krecek.png": "/explore-jogja/static/media/sambel-goreng-krecek.188e0ef0a894ac587a07.png",
@@ -45,6 +45,7 @@
     "static/media/munggur-minang.png": "/explore-jogja/static/media/munggur-minang.c03d0174df5b53100c92.png",
     "static/media/nasi-goreng-munggur-minang.png": "/explore-jogja/static/media/nasi-goreng-munggur-minang.c03d0174df5b53100c92.png",
     "static/media/candi-utama.jpg": "/explore-jogja/static/media/candi-utama.05553bfc181c85550408.jpg",
+    "static/media/tarekh.jpg": "/explore-jogja/static/media/tarekh.b6b7be29e69f7bb8b8a5.jpg",
     "static/media/love-box.png": "/explore-jogja/static/media/love-box.27b57f418fb4437158ba.png",
     "static/media/tugu.jpg": "/explore-jogja/static/media/tugu.ed7f84aa8afbdf9e226b.jpg",
     "static/media/museum-prambanan.jpg": "/explore-jogja/static/media/museum-prambanan.46878d1122be3414e808.jpg",
@@ -71,6 +72,7 @@
     "static/media/hotel-santika-gunungkidul-1.jpg": "/explore-jogja/static/media/hotel-santika-gunungkidul-1.9c11573eb1ceba297632.jpg",
     "static/media/sendratari-ramayana-prambanan.jpg": "/explore-jogja/static/media/sendratari-ramayana-prambanan.7ed343ed6f750eb3a7f5.jpg",
     "static/media/the-patio-yogya-1.jpg": "/explore-jogja/static/media/the-patio-yogya-1.103777b3ab6152bb4c14.jpg",
+    "static/media/sandy.jpg": "/explore-jogja/static/media/sandy.13418e6a1d3dd2ef15dc.jpg",
     "static/media/griya-limasan-gunung-kidul-1.jpg": "/explore-jogja/static/media/griya-limasan-gunung-kidul-1.c0a183018def7516f36a.jpg",
     "static/media/dinner1.jpg": "/explore-jogja/static/media/dinner1.ec316d73a66e0d5fb922.jpg",
     "static/media/queen-of-the-south-resort-1.jpeg": "/explore-jogja/static/media/queen-of-the-south-resort-1.0ac49478c0bae7d6d449.jpeg",
@@ -84,7 +86,7 @@
     "static/media/heha-aeroplane.jpg": "/explore-jogja/static/media/heha-aeroplane.91dae4b524da21373cb2.jpg",
     "static/media/photo-spot.jpg": "/explore-jogja/static/media/photo-spot.03b5a1d5cd8c1c999efe.jpg",
     "static/media/goa-pindul-cropped-2.jpg": "/explore-jogja/static/media/goa-pindul-cropped-2.f309d19ce36a2f685e13.jpg",
-    "static/media/goa-pindul-3.jpg": "/explore-jogja/static/media/goa-pindul-3.7037d303c50e648764a0.jpg",
+    "static/media/rafi.jpeg": "/explore-jogja/static/media/rafi.419c00cdbca98dca1f1d.jpeg",
     "static/media/pin-location.png": "/explore-jogja/static/media/pin-location.4ba161a40803eedbbe55.png",
     "static/media/amaranta-prambanan-hotel-1.jpg": "/explore-jogja/static/media/amaranta-prambanan-hotel-1.dca3a04407d019fc84df.jpg",
     "static/media/sleep-icon-2.png": "/explore-jogja/static/media/sleep-icon-2.d3b115ce76c7f825a149.png",
@@ -97,12 +99,12 @@
     "static/media/slick.ttf": "/explore-jogja/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/explore-jogja/index.html",
     "static/media/slick.woff": "/explore-jogja/static/media/slick.295183786cd8a1389865.woff",
-    "main.dfa33eab.css.map": "/explore-jogja/static/css/main.dfa33eab.css.map",
-    "main.1ee71192.js.map": "/explore-jogja/static/js/main.1ee71192.js.map",
+    "main.50651595.css.map": "/explore-jogja/static/css/main.50651595.css.map",
+    "main.ed6473d0.js.map": "/explore-jogja/static/js/main.ed6473d0.js.map",
     "885.22eb1240.chunk.js.map": "/explore-jogja/static/js/885.22eb1240.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfa33eab.css",
-    "static/js/main.1ee71192.js"
+    "static/css/main.50651595.css",
+    "static/js/main.ed6473d0.js"
   ]
 }
